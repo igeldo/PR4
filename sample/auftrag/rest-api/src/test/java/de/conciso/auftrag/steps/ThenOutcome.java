@@ -1,25 +1,23 @@
 package de.conciso.auftrag.steps;
 
 import com.tngtech.jgiven.Stage;
+import com.tngtech.jgiven.annotation.ExpectedScenarioState;
 import com.tngtech.jgiven.annotation.ScenarioState;
 import de.conciso.auftrag.Auftraege;
 import de.conciso.auftrag.Auftrag;
 import org.assertj.core.api.Assertions;
 
 public class ThenOutcome extends Stage<ThenOutcome>{
-/*
-    @ScenarioState
-    private static final String BESTELL_NUMMER = "someBestellNummer";
 
-    @ScenarioState
+    @ExpectedScenarioState
     Auftraege auftraege;
 
-    @ScenarioState
-    private Auftrag testAuftrag = new Auftrag(BESTELL_NUMMER);
+    @ExpectedScenarioState
+    private Auftrag testAuftrag;
 
- */
 
-    public ThenOutcome then_AuftraegeService_is_called(){
+
+    public ThenOutcome AuftraegeService_is_called(){
         //Assertions.assertThat((auftraege).create(testAuftrag));
         Assertions.assertThat(true);
         return self();
