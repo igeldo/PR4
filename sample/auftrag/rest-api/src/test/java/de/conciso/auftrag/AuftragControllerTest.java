@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 class AuftragControllerTest extends ScenarioTest<GivenStatement, WhenAction, ThenOutcome>{
 
     @Test
-    public void Given_Auftrag_can_be_created_When_calling_create_then_AuftraegeService_is_called() {
+    public void given_Auftrag_can_be_created_When_calling_create_then_AuftraegeService_is_called() {
         given().auftrag_can_be_created();
         when().calling_create();
         then().auftraegeService_is_called();
