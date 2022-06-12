@@ -34,6 +34,7 @@
         <keycloak-adapter.version>16.1.0</keycloak-adapter.version>
         <lombok.version>1.18.22</lombok.version>
         <jgiven.version>1.2.2</jgiven.version>
+        <junit.version>5.8.2</junit.version>
     </properties>
 
     <build>
@@ -127,9 +128,21 @@
             <artifactId>lombok</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>com.tngtech.jgiven</groupId>
-            <artifactId>jgiven-junit</artifactId>
-            <version>${jgiven.version}</version>
+            <artifactId>jgiven-junit5</artifactId>
+            <version>1.2.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
