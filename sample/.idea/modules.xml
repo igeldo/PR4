@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/auftrag/app/app.iml" filepath="$PROJECT_DIR$/auftrag/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auftrag/auftrag.iml" filepath="$PROJECT_DIR$/auftrag/auftrag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auftrag/docker/docker.iml" filepath="$PROJECT_DIR$/auftrag/docker/docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auftrag/domain-api/domain-api.iml" filepath="$PROJECT_DIR$/auftrag/domain-api/domain-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auftrag/domain-core/domain-core.iml" filepath="$PROJECT_DIR$/auftrag/domain-core/domain-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auftrag/infrastructure/infrastructure.iml" filepath="$PROJECT_DIR$/auftrag/infrastructure/infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auftrag/rest-api/rest-api.iml" filepath="$PROJECT_DIR$/auftrag/rest-api/rest-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sample.iml" filepath="$PROJECT_DIR$/.idea/sample.iml" />
+    </modules>
+  </component>
+</project>

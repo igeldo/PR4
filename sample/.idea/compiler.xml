@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="domain-api" />
+        <module name="rest-api" />
+        <module name="app" />
+        <module name="infrastructure" />
+        <module name="domain-core" />
+        <module name="docker" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="app" target="11" />
+      <module name="auftrag" target="11" />
+      <module name="docker" target="11" />
+      <module name="domain-api" target="11" />
+      <module name="domain-core" target="11" />
+      <module name="infrastructure" target="11" />
+      <module name="rest-api" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="app" options="-parameters" />
+      <module name="docker" options="-parameters" />
+      <module name="domain-api" options="-parameters" />
+      <module name="domain-core" options="-parameters" />
+      <module name="infrastructure" options="-parameters" />
+      <module name="rest-api" options="-parameters" />
+    </option>
+  </component>
+</project>
