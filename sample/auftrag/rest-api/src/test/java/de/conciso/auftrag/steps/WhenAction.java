@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 public class WhenAction extends Stage<WhenAction>{
 
     @ExpectedScenarioState
-     AuftragController cut;
+    AuftragController cut;
 
     private AuftragRepresentation testAuftragRepresentation;
 

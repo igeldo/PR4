@@ -128,7 +128,7 @@
         </dependency>
         <dependency>
             <groupId>com.tngtech.jgiven</groupId>
-            <artifactId>jgiven-junit5</artifactId>
+            <artifactId>jgiven-junit</artifactId>
             <version>${jgiven.version}</version>
             <scope>test</scope>
         </dependency>

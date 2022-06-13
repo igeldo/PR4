@@ -10,10 +10,10 @@ import de.conciso.auftrag.AuftragController;
 public class GivenStatement extends Stage<GivenStatement>{
 
     @ProvidedScenarioState
-    private static String BESTELL_NUMMER = "someBestellNummer";
+    private static String BESTELL_NUMMER;
 
     @ProvidedScenarioState
-    private static int ID = 42;
+    private static int ID;
 
     @ProvidedScenarioState
     Auftraege auftraege;
@@ -21,16 +21,18 @@ public class GivenStatement extends Stage<GivenStatement>{
     @ProvidedScenarioState
     AuftragController cut;
 
-    @ProvidedScenarioState(resolution = ScenarioState.Resolution.NAME)
-    Auftrag testAuftragWithId;
+    @ProvidedScenarioState
+    private Auftrag testAuftragWithId;
 
-    @ProvidedScenarioState(resolution = ScenarioState.Resolution.NAME)
-    Auftrag testAuftrag;
+    @ProvidedScenarioState
+    private Auftrag testAuftrag;
 
 
 
 
     public GivenStatement Auftrag_can_be_created(){
+        BESTELL_NUMMER = "someBestellNummer";
+        ID = 42;
         testAuftrag = new Auftrag(BESTELL_NUMMER);
         testAuftragWithId = new Auftrag(ID, BESTELL_NUMMER);
         auftraege.create(testAuftragWithId);

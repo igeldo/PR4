@@ -20,9 +20,9 @@ public class ThenOutcome extends Stage<ThenOutcome>{
     Auftrag testAuftragWithId;
 
 
-    public ThenOutcome AuftraegeService_is_called(){
-        //Assertions.assertThat((auftraege).create(testAuftrag));
-        Assertions.assertThat(true);
+    public ThenOutcome auftraegeService_is_called(){
+        Assertions.assertThat((auftraege).create(testAuftrag));
+        //Assertions.assertThat(true);
         return self();
     }
 }
