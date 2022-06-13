@@ -6,8 +6,14 @@ import com.tngtech.jgiven.annotation.ScenarioState;
 import de.conciso.auftrag.Auftraege;
 import de.conciso.auftrag.Auftrag;
 import de.conciso.auftrag.AuftragController;
+import de.conciso.auftrag.AuftragRepresentation;
+import org.mockito.BDDMockito;
 
 import java.util.Optional;
+
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.mock;
 
 public class GivenStatement extends Stage<GivenStatement>{
 
@@ -18,20 +24,7 @@ public class GivenStatement extends Stage<GivenStatement>{
     private static final int ID = 42;
 
     @ProvidedScenarioState
-    Auftraege auftraege = new Auftraege() {
-        @Override
-        public Auftrag create(Auftrag auftrag) {
-            return auftrag;
-        }
-
-        @Override
-        public Optional<Auftrag> findById(int id) {
-            return Optional.empty();
-        }
-    };
-
-    @ProvidedScenarioState
-    AuftragController cut;
+    Auftraege auftraege = mock(Auftraege.class);
 
     @ProvidedScenarioState(resolution = ScenarioState.Resolution.NAME)
     private Auftrag testAuftragWithId;
@@ -39,14 +32,24 @@ public class GivenStatement extends Stage<GivenStatement>{
     @ProvidedScenarioState(resolution = ScenarioState.Resolution.NAME)
     private Auftrag testAuftrag;
 
+    @ProvidedScenarioState
+    AuftragRepresentation testAuftragRepresentation;
+
 
 
 
     public GivenStatement auftrag_can_be_created(){
+        BDDMockito.given(auftraege.create(any(Auftrag.class))).willReturn(testAuftrag);
+        return self();
+    }
 
-        testAuftrag = new Auftrag(BESTELL_NUMMER);
-        testAuftragWithId = new Auftrag(ID, BESTELL_NUMMER);
-        auftraege.create(testAuftragWithId);
+    public GivenStatement auftrag(int id, String bestellnummer){
+        testAuftrag = new Auftrag(id, bestellnummer);
+        return self();
+    }
+
+    public GivenStatement auftragRepresentation(int id, String bestellnummer){
+        testAuftragRepresentation = AuftragRepresentation.builder().id(id).bestellNummer(bestellnummer).build();
         return self();
     }
 }
