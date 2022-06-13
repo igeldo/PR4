@@ -13,7 +13,8 @@ class AuftragControllerTest extends ScenarioTest<GivenStatement, WhenAction, The
         given().auftragRepresentation(42, "7411")
                 .and().auftrag(42,"7411")
                 .and().auftrag_can_be_created();
-        when().calling_create();
+        when().creating_Controller()
+                .and().calling_create();
         then().auftraegeService_is_called();
     }
 }

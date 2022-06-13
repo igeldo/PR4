@@ -14,7 +14,7 @@ public class WhenAction extends Stage<WhenAction>{
     @ExpectedScenarioState
     Auftraege auftraege;
 
-    AuftragController cut = new AuftragController(auftraege);
+    AuftragController cut;
 
     @ExpectedScenarioState
     private AuftragRepresentation testAuftragRepresentation;
@@ -23,9 +23,12 @@ public class WhenAction extends Stage<WhenAction>{
     ResponseEntity<AuftragRepresentation> result;
 
     public WhenAction calling_create(){
-        cut = new AuftragController(auftraege);
         result = cut.create(testAuftragRepresentation);
+        return self();
+    }
 
+    public WhenAction creating_Controller(){
+        cut = new AuftragController(auftraege);
         return self();
     }
 }
