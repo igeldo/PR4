@@ -1,61 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="de.conciso.starter.GreeterServiceTest" time="0.234" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="de.conciso.starter.GreeterServiceTest" time="0.122" tests="7" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="sun.desktop" value="gnome"/>
-    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.specification.version" value="11"/>
-    <property name="sun.cpu.isalist" value=""/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/mnt/hgfs/Workspaces2021/java-starter/step0050/domain-core/target/test-classes:/mnt/hgfs/Workspaces2021/java-starter/step0050/domain-core/target/classes:/mnt/hgfs/Workspaces2021/java-starter/step0050/domain-api/target/domain-api-1.0-SNAPSHOT.jar:/home/fh/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.2/junit-jupiter-5.7.2.jar:/home/fh/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/home/fh/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/fh/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/fh/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/home/fh/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.2/junit-jupiter-params-5.7.2.jar:/home/fh/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/home/fh/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/home/fh/.m2/repository/org/assertj/assertj-core/3.20.2/assertj-core-3.20.2.jar:/home/fh/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
-    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Patrick\PR4\step0050\domain-core\target\test-classes;C:\Users\Patrick\PR4\step0050\domain-core\target\classes;C:\Users\Patrick\PR4\step0050\domain-api\target\domain-api-1.0-SNAPSHOT.jar;C:\Users\Patrick\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.2\junit-jupiter-5.7.2.jar;C:\Users\Patrick\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\Patrick\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Patrick\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Patrick\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\Patrick\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.2\junit-jupiter-params-5.7.2.jar;C:\Users\Patrick\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\Patrick\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\Patrick\.m2\repository\org\assertj\assertj-core\3.20.2\assertj-core-3.20.2.jar;"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://ubuntu.com/"/>
-    <property name="user.timezone" value=""/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
     <property name="java.vm.specification.version" value="11"/>
-    <property name="os.name" value="Linux"/>
+    <property name="os.name" value="Windows 10"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="US"/>
-    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/mnt/hgfs/Workspaces2021/java-starter/step0050/domain-core/target/surefire/sur8447757066103196252.ja /mnt/hgfs/Workspaces2021/java-starter/step0050/domain-core/target/surefire 2021-11-23T09-25-11_587-jvmRun1 sur15128403126917429246 sur980305518219830579"/>
+    <property name="user.country" value="DE"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\Patrick\AppData\Local\Temp\surefire637156042770268697\surefirebooter4490937005960694390.jar C:\Users\Patrick\AppData\Local\Temp\surefire637156042770268697 2022-04-25T13-24-36_292-jvmRun1 surefire40316377506705246tmp surefire_017454740785329178430tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/mnt/hgfs/Workspaces2021/java-starter/step0050/domain-core/target/test-classes:/mnt/hgfs/Workspaces2021/java-starter/step0050/domain-core/target/classes:/mnt/hgfs/Workspaces2021/java-starter/step0050/domain-api/target/domain-api-1.0-SNAPSHOT.jar:/home/fh/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.2/junit-jupiter-5.7.2.jar:/home/fh/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/home/fh/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/fh/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/fh/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/home/fh/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.2/junit-jupiter-params-5.7.2.jar:/home/fh/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/home/fh/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/home/fh/.m2/repository/org/assertj/assertj-core/3.20.2/assertj-core-3.20.2.jar:/home/fh/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="surefire.test.class.path" value="C:\Users\Patrick\PR4\step0050\domain-core\target\test-classes;C:\Users\Patrick\PR4\step0050\domain-core\target\classes;C:\Users\Patrick\PR4\step0050\domain-api\target\domain-api-1.0-SNAPSHOT.jar;C:\Users\Patrick\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.2\junit-jupiter-5.7.2.jar;C:\Users\Patrick\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\Patrick\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Patrick\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Patrick\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\Patrick\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.2\junit-jupiter-params-5.7.2.jar;C:\Users\Patrick\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\Patrick\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\Patrick\.m2\repository\org\assertj\assertj-core\3.20.2\assertj-core-3.20.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/home/fh"/>
-    <property name="user.language" value="en"/>
+    <property name="user.home" value="C:\Users\Patrick"/>
+    <property name="user.language" value="de"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2021-04-20"/>
-    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
-    <property name="file.separator" value="/"/>
-    <property name="basedir" value="/mnt/hgfs/Workspaces2021/java-starter/step0050/domain-core"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.home" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Patrick\PR4\step0050\domain-core"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/mnt/hgfs/Workspaces2021/java-starter/step0050/domain-core/target/surefire/sur8447757066103196252.ja"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Patrick\AppData\Local\Temp\surefire637156042770268697\surefirebooter4490937005960694390.jar"/>
+    <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
-    <property name="user.name" value="fh"/>
-    <property name="path.separator" value=":"/>
-    <property name="os.version" value="5.11.0-40-generic"/>
+    <property name="java.runtime.version" value="11.0.10+9"/>
+    <property name="user.name" value="Patrick"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="file.encoding" value="UTF-8"/>
+    <property name="file.encoding" value="Cp1252"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="localRepository" value="/home/fh/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
-    <property name="java.io.tmpdir" value="/tmp"/>
-    <property name="java.version" value="11.0.11"/>
-    <property name="user.dir" value="/mnt/hgfs/Workspaces2021/java-starter/step0050/domain-core"/>
+    <property name="java.vendor.version" value="AdoptOpenJDK"/>
+    <property name="localRepository" value="C:\Users\Patrick\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\Patrick\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.10"/>
+    <property name="user.dir" value="C:\Users\Patrick\PR4\step0050\domain-core"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="sun.os.patch.level" value="unknown"/>
-    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
-    <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.vendor" value="Ubuntu"/>
-    <property name="java.vm.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\MATLAB\R2022a\bin;C:\Program Files\Git\cmd;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files (x86)\AOMEI\AOMEI Backupper\6.9.1;C:\Program Files\apache-maven-3.8.5\bin;C:\Program Files\PowerShell\7\;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.3\bin;C:\Users\Patrick\AppData\Local\Flutter\flutter\bin;C:\Users\Patrick\AppData\Local\Pandoc\;C:\Users\Patrick\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\Patrick\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vm.version" value="11.0.10+9"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="then_result_is_Hello_Georg" classname="de.conciso.starter.GreeterServiceTest$Given_a_name$When_calling_greet" time="0.159"/>
+  <testcase name="when_calling_greet_result_is_Hello_Georg" classname="de.conciso.starter.GreeterServiceTest" time="0.095"/>
+  <testcase name="then_result_contains_Hello" classname="de.conciso.starter.GreeterServiceTest$Given_name_is_null$When_calling_greet" time="0.002"/>
+  <testcase name="then_result_contains_Hello" classname="de.conciso.starter.GreeterServiceTest$Given_name_is_Georg$When_calling_greet" time="0.001"/>
+  <testcase name="then_result_is_Hello_null" classname="de.conciso.starter.GreeterServiceTest$Given_name_is_null$When_calling_greet" time="0.002"/>
+  <testcase name="then_result_is_not_null" classname="de.conciso.starter.GreeterServiceTest$Given_name_is_null$When_calling_greet" time="0.001"/>
+  <testcase name="then_result_is_not_null" classname="de.conciso.starter.GreeterServiceTest$Given_name_is_Georg$When_calling_greet" time="0.001"/>
+  <testcase name="then_result_is_Hello_Georg" classname="de.conciso.starter.GreeterServiceTest$Given_name_is_Georg$When_calling_greet" time="0.001"/>
 </testsuite>

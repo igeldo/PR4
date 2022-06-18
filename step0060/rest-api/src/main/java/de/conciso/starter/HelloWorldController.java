@@ -14,6 +14,8 @@ public class HelloWorldController {
 
   private static Logger logger = LogManager.getLogger(HelloWorldController.class);
 
+  // Reagiere auf GET-Methode und produziere String --> siehe Annotation
+  // RequestParam für Request-Body
   @GetMapping(produces = MediaType.TEXT_PLAIN_VALUE)
   public String sayHello(@RequestParam("name") String name) {
     var greeter = new GreeterService();

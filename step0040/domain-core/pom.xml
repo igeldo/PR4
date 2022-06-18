@@ -3,16 +3,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!--Parent pom einbinden-->
     <parent>
         <groupId>de.conciso.starter</groupId>
         <artifactId>starter</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
+    
+    <!--eigener Name-->
     <artifactId>domain-core</artifactId>
 
     <dependencies>
-        <dependency>
+        <!--Domain-api einbinden, da Greeter von dort implementiert wird-->
+        <dependency> 
             <groupId>de.conciso.starter</groupId>
             <artifactId>domain-api</artifactId>
         </dependency>
