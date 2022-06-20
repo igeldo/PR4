@@ -21,15 +21,15 @@ public class RohstoffeService implements Rohstoffe {
     @Override
     public Rohstoff create(Rohstoff rohstoff) {
         logger.info("create rohstoff: " + rohstoff.getName());
-        return produktDAO.save(produkt);
+        return rohstoffDAO.save(rohstoff);
     }
 
     @Override
-    public Optional<Produkt> findById(int id) {
-        logger.info("looking for person with id: " + id);
-        var found = produktDAO.findById(id);
+    public Optional<Rohstoff> findById(int id) {
+        logger.info("looking for rohstoff with id: " + id);
+        var found = rohstoffDAO.findById(id);
         if (found.isEmpty()) {
-            logger.warn("no person found with id: " + id);
+            logger.warn("no rohstoff found with id: " + id);
         }
         return found;
     }

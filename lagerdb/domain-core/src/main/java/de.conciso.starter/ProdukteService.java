@@ -26,10 +26,10 @@ public class ProdukteService implements Produkte {
 
     @Override
     public Optional<Produkt> findById(int id) {
-        logger.info("looking for person with id: " + id);
+        logger.info("looking for product with id: " + id);
         var found = produktDAO.findById(id);
         if (found.isEmpty()) {
-            logger.warn("no person found with id: " + id);
+            logger.warn("no product found with id: " + id);
         }
         return found;
     }
