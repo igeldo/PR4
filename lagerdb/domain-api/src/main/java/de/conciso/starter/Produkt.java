@@ -54,4 +54,8 @@ public class Produkt {
     //return this.zutaten;
     return Collections.unmodifiableList(zutaten);
   }
+
+  public int getId() {
+    return this.id;
+  }
 }
