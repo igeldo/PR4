@@ -14,6 +14,20 @@ public class Lager {
   char code;
   int kapazitaet;
 
+  public Lager(Object lager) {
+    if (lager instanceof Lager) {
+      this = lager;
+    } else {
+      throw new IllegalArgumentException();
+    }
+  }
+
+  public Lager(String ort, char code, int kapazitaet) {
+    this.setOrt(ort);
+    this.setCode(code);
+    this.setKapazitaet(kapazitaet);
+  }
+
   public void setOrt(String ort) {
     this.ort = ort;
   }

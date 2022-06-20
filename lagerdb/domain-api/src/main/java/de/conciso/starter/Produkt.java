@@ -16,6 +16,20 @@ public class Produkt {
   long preis;
   Collection<Zutat> zutaten;
 
+  public Produkt(Object produkt) {
+    if (produkt instanceof Produkt) {
+      this = produkt;
+    } else {
+      throw new IllegalArgumentException();
+    }
+  }
+
+  public Produkt(String name, long preis, Collection<Zutat> zutaten) {
+    this.setName(name);
+    this.setPreis(preis);
+    this.setZutaten(zutaten);
+  }
+
   public void setName(String name) {
     this.name = name;
   }

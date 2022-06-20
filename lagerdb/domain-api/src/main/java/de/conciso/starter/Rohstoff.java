@@ -14,6 +14,20 @@ public class Rohstoff {
   char code;
   String gebinde;
 
+  public Rohstoff(Object rohstoff) {
+    if (rohstoff instanceof Rohstoff) {
+      this = rohstoff;
+    } else {
+      throw new IllegalArgumentException();
+    }
+  }
+
+  public Rohstoff(String name, char code, String gebinde) {
+    this.setName(name);
+    this.setCode(code);
+    this.setGebinde(gebinde);
+  }
+
   public void setName(String name) {
     this.name = name;
   }

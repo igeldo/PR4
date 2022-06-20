@@ -8,6 +8,19 @@ public class Zutat {
   int rohstoffId;
   int menge;
 
+  public Zutat(Object zutat) {
+    if (zutat instanceof Zutat) {
+      this = zutat;
+    } else {
+      throw new IllegalArgumentException();
+    }
+  }
+
+  public Zutat(int rohstoffId, int menge) {
+    this.setRohstoffId(rohstoffId);
+    this.setMenge(menge);
+  }
+
   public void setRohstoffId(int rohstoffId) {
     this.rohstoffId = rohstoffId;
   }
