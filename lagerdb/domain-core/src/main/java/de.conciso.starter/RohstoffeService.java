@@ -19,7 +19,7 @@ public class RohstoffeService implements Rohstoffe {
     }
 
     @Override
-    public Rohstoff create(Rohstoff rohstoff) {
+    public Rohstoff erzeuge(Rohstoff rohstoff) {
         logger.info("create rohstoff: " + rohstoff.getName());
         return rohstoffDAO.save(rohstoff);
     }
