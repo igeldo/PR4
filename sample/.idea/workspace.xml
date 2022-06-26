@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c882e35-cd72-4931-b43a-4778a82f3f94" name="Changes" comment="">
+    <list default="true" id="0c882e35-cd72-4931-b43a-4778a82f3f94" name="Changes" comment="added remaining JGiven Tests in Person">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_11.xml" afterDir="false" />
@@ -222,42 +224,275 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_18.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_4.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sample.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/auftrag/app/app (1) (de.conciso.auftrag).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/app/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/app/app.iml~parent of 0b6b628... added JGiven tests in Shop" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/app/target/app-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/app/target/app-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/app/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/app/target/classes/de/conciso/auftrag/AuftragApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/app/target/classes/de/conciso/auftrag/KeycloakConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/app/target/classes/de/conciso/auftrag/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/app/target/classes/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/app/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/app/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/app/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/auftrag/auftrag.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/auftrag.iml~parent of 0b6b628... added JGiven tests in Shop" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/auftrag/docker/docker (1) (de.conciso.auftrag).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/docker/docker.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/docker/docker.iml~parent of 0b6b628... added JGiven tests in Shop" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/docker/target/docker-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/docker/target/maven-archiver/pom.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/auftrag/domain-api/domain-api (1) (de.conciso.auftrag).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-api/domain-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-api/domain-api.iml~parent of 0b6b628... added JGiven tests in Shop" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-api/target/classes/de/conciso/auftrag/Artikel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-api/target/classes/de/conciso/auftrag/Auftraege.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-api/target/classes/de/conciso/auftrag/Auftrag.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-api/target/classes/de/conciso/auftrag/Lieferadresse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-api/target/domain-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/auftrag/domain-core/domain-core (1) (de.conciso.auftrag).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-core/domain-core.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-core/domain-core.iml~parent of 0b6b628... added JGiven tests in Shop" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-core/target/classes/de/conciso/auftrag/AuftraegeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-core/target/classes/de/conciso/auftrag/AuftragDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-core/target/domain-core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-core/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/domain-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/auftrag/infrastructure/infrastructure (1) (de.conciso.auftrag).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/infrastructure/infrastructure.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/infrastructure/infrastructure.iml~parent of 0b6b628... added JGiven tests in Shop" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/infrastructure/target/classes/de/conciso/auftrag/SpringDataAuftragDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/infrastructure/target/infrastructure-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/infrastructure/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/infrastructure/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/infrastructure/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/jgiven-reports/de.conciso.auftrag.AuftragControllerTest.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/auftrag/rest-api/rest-api (1) (de.conciso.auftrag).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/rest-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/rest-api.iml~parent of 0b6b628... added JGiven tests in Shop" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/classes/de/conciso/auftrag/ArtikelRepresentation$ArtikelRepresentationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/classes/de/conciso/auftrag/ArtikelRepresentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/classes/de/conciso/auftrag/AuftragController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/classes/de/conciso/auftrag/AuftragRepresentation$AuftragRepresentationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/classes/de/conciso/auftrag/AuftragRepresentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/classes/de/conciso/auftrag/LieferadresseRepresentation$LieferadresseRepresentationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/classes/de/conciso/auftrag/LieferadresseRepresentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/jgiven-reports/json/de.conciso.auftrag.AuftragControllerTest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/rest-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/surefire-reports/TEST-de.conciso.auftrag.AuftragControllerTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/surefire-reports/de.conciso.auftrag.AuftragControllerTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/test-classes/de/conciso/auftrag/AuftragControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/test-classes/de/conciso/auftrag/AuftragControllerTestMockito$Given_Auftrag_cannot_be_found$When_calling_findById.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/test-classes/de/conciso/auftrag/AuftragControllerTestMockito$Given_Auftrag_cannot_be_found.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/test-classes/de/conciso/auftrag/AuftragControllerTestMockito$Given_testAuftrag$Given_Auftrag_can_be_created$When_calling_create.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/test-classes/de/conciso/auftrag/AuftragControllerTestMockito$Given_testAuftrag$Given_Auftrag_can_be_created.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/test-classes/de/conciso/auftrag/AuftragControllerTestMockito$Given_testAuftrag$Given_Auftrag_can_be_found$When_calling_findById.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/test-classes/de/conciso/auftrag/AuftragControllerTestMockito$Given_testAuftrag$Given_Auftrag_can_be_found.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/test-classes/de/conciso/auftrag/AuftragControllerTestMockito$Given_testAuftrag.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/test-classes/de/conciso/auftrag/AuftragControllerTestMockito.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/test-classes/de/conciso/auftrag/steps/GivenStatement.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/test-classes/de/conciso/auftrag/steps/ThenOutcome.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auftrag/rest-api/target/test-classes/de/conciso/auftrag/steps/WhenAction.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/person/app/app (1) (de.conciso.person).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/app/target/app-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/app/target/app-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/app/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/app/target/classes/de/conciso/person/AuftragApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/app/target/classes/de/conciso/person/KeycloakConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/app/target/classes/de/conciso/person/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/app/target/classes/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/app/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/app/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/app/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/person/docker/docker (1) (de.conciso.person).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/docker/target/docker-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/docker/target/maven-archiver/pom.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/person/domain-api/domain-api (1) (de.conciso.person).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-api/target/classes/de/conciso/person/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-api/target/classes/de/conciso/person/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-api/target/classes/de/conciso/person/Personen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-api/target/domain-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/person/domain-core/domain-core (1) (de.conciso.person).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/classes/de/conciso/person/PersonDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/classes/de/conciso/person/PersonenService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/domain-core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/surefire-reports/TEST-de.conciso.person.PersonenServiceTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/surefire-reports/de.conciso.person.PersonenServiceTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/test-classes/de/conciso/person/PersonenServiceTest$Given_person_cannot_be_found$When_calling_addAddress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/test-classes/de/conciso/person/PersonenServiceTest$Given_person_cannot_be_found$When_calling_findById.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/test-classes/de/conciso/person/PersonenServiceTest$Given_person_cannot_be_found.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/test-classes/de/conciso/person/PersonenServiceTest$Given_testPerson$Given_person_can_be_found$When_calling_addAddress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/test-classes/de/conciso/person/PersonenServiceTest$Given_testPerson$Given_person_can_be_found$When_calling_findById.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/test-classes/de/conciso/person/PersonenServiceTest$Given_testPerson$Given_person_can_be_found.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/test-classes/de/conciso/person/PersonenServiceTest$Given_testPerson$Given_person_can_be_saved$When_calling_create.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/test-classes/de/conciso/person/PersonenServiceTest$Given_testPerson$Given_person_can_be_saved.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/test-classes/de/conciso/person/PersonenServiceTest$Given_testPerson.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/domain-core/target/test-classes/de/conciso/person/PersonenServiceTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/person/infrastructure/infrastructure (1) (de.conciso.person).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/infrastructure/target/classes/de/conciso/person/SpringDataPersonDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/infrastructure/target/infrastructure-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/infrastructure/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/infrastructure/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/infrastructure/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/person/person.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/person/rest-api/rest-api (1) (de.conciso.person).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/classes/de/conciso/person/AddressRepresentation$AddressRepresentationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/classes/de/conciso/person/AddressRepresentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/classes/de/conciso/person/PersonController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/classes/de/conciso/person/PersonRepresentation$PersonRepresentationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/classes/de/conciso/person/PersonRepresentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/jgiven-reports/json/de.conciso.person.PersonControllerTest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/rest-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/surefire-reports/TEST-de.conciso.person.PersonControllerTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/surefire-reports/de.conciso.person.PersonControllerTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest$GivenStatement.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest$ThenOutcome.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest$WhenAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old$Given_addAddress_throws_exception$When_calling_addAddress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old$Given_addAddress_throws_exception.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old$Given_address_can_be_added$When_calling_addAddress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old$Given_address_can_be_added.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old$Given_address_cannot_be_added$When_calling_addAddress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old$Given_address_cannot_be_added.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old$Given_create_person_throws_exception$When_calling_create.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old$Given_create_person_throws_exception.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old$Given_find_person_throws_exception$When_calling_findById.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old$Given_find_person_throws_exception.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old$Given_person_can_be_created$When_calling_create.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old$Given_person_can_be_created.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old$Given_person_can_be_found$When_calling_findById.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old$Given_person_can_be_found.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old$Given_person_cannot_be_found$When_calling_findById.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old$Given_person_cannot_be_found.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest_old.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/shop/app/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/app/target/app-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/app/target/app-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/app/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/app/target/classes/de/conciso/shop/KeycloakConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/app/target/classes/de/conciso/shop/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/app/target/classes/de/conciso/shop/StarterApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/app/target/classes/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/app/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/app/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/app/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/shop/docker/docker.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/docker/target/docker-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/docker/target/maven-archiver/pom.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/shop/domain-api/domain-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-api/target/classes/de/conciso/shop/Address$AddressBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-api/target/classes/de/conciso/shop/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-api/target/classes/de/conciso/shop/Auftrag$AuftragBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-api/target/classes/de/conciso/shop/Auftrag.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-api/target/classes/de/conciso/shop/Lieferadresse$LieferadresseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-api/target/classes/de/conciso/shop/Lieferadresse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-api/target/classes/de/conciso/shop/Person$PersonBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-api/target/classes/de/conciso/shop/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-api/target/classes/de/conciso/shop/Shop.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-api/target/domain-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/shop/domain-core/domain-core.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-core/target/classes/de/conciso/shop/Auftraege.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-core/target/classes/de/conciso/shop/Personen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-core/target/classes/de/conciso/shop/ShopService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-core/target/domain-core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-core/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/domain-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/shop/infrastructure/infrastructure.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/infrastructure/target/classes/de/conciso/shop/AddressRestClientRepresentation$AddressRestClientRepresentationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/infrastructure/target/classes/de/conciso/shop/AddressRestClientRepresentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/infrastructure/target/classes/de/conciso/shop/AuftraegeRestClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/infrastructure/target/classes/de/conciso/shop/AuftragRestClientRepresentation$AuftragRestClientRepresentationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/infrastructure/target/classes/de/conciso/shop/AuftragRestClientRepresentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/infrastructure/target/classes/de/conciso/shop/InfrastructureConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/infrastructure/target/classes/de/conciso/shop/LieferadresseRestClientRepresentation$LieferadresseRestClientRepresentationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/infrastructure/target/classes/de/conciso/shop/LieferadresseRestClientRepresentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/infrastructure/target/classes/de/conciso/shop/PersonRestClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/infrastructure/target/classes/de/conciso/shop/PersonRestClientRepresentation$PersonRestClientRepresentationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/infrastructure/target/classes/de/conciso/shop/PersonRestClientRepresentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/infrastructure/target/infrastructure-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/infrastructure/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/infrastructure/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/infrastructure/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/shop/rest-api/rest-api.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/shop/rest-api/src/test/java/de/conciso/shop/ShopControllerTest_old.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/classes/de/conciso/shop/AddressRepresentation$AddressRepresentationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/classes/de/conciso/shop/AddressRepresentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/classes/de/conciso/shop/AuftragRepresentation$AuftragRepresentationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/classes/de/conciso/shop/AuftragRepresentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/classes/de/conciso/shop/AuftragRequestRepresentation$AuftragRequestRepresentationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/classes/de/conciso/shop/AuftragRequestRepresentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/classes/de/conciso/shop/LieferadresseRepresentation$LieferadresseRepresentationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/classes/de/conciso/shop/LieferadresseRepresentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/classes/de/conciso/shop/PersonRepresentation$PersonRepresentationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/classes/de/conciso/shop/PersonRepresentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/classes/de/conciso/shop/ShopController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/jgiven-reports/json/de.conciso.shop.ShopControllerTest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/rest-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/surefire-reports/TEST-de.conciso.shop.ShopControllerTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/surefire-reports/de.conciso.shop.ShopControllerTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest$GivenStatement.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest$ThenOutcome.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest$WhenAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_address_and_adressRepresentation$Given_addAddress_throws_exception$When_calling_addAddress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_address_and_adressRepresentation$Given_addAddress_throws_exception.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_address_and_adressRepresentation$Given_address_can_be_added$When_calling_addAddress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_address_and_adressRepresentation$Given_address_can_be_added.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_address_and_adressRepresentation$Given_address_cannot_be_added$When_calling_addAddress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_address_and_adressRepresentation$Given_address_cannot_be_added.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_address_and_adressRepresentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_create_person_throws_exception$When_calling_create.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_create_person_throws_exception.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_find_person_throws_exception$When_calling_findById.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_find_person_throws_exception.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_person_can_be_created$When_calling_create.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_person_can_be_created.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_person_can_be_found$When_calling_findById.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_person_can_be_found.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_person_cannot_be_found$When_calling_findById.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old$Given_person_cannot_be_found.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest_old.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/shop/starter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auftrag/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auftrag/docker/docker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/docker/docker.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auftrag/domain-api/domain-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/domain-api/domain-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auftrag/domain-core/domain-core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/domain-core/domain-core.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auftrag/infrastructure/infrastructure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/infrastructure/infrastructure.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auftrag/rest-api/jgiven-reports/de.conciso.auftrag.AuftragControllerTest.json" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/rest-api/jgiven-reports/de.conciso.auftrag.AuftragControllerTest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auftrag/rest-api/rest-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/rest-api/rest-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/person/rest-api/src/test/java/de/conciso/person/PersonControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/person/rest-api/src/test/java/de/conciso/person/PersonControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/rest-api/src/test/java/de/conciso/shop/ShopControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/rest-api/src/test/java/de/conciso/shop/ShopControllerTest.java" afterDir="false" />
@@ -288,15 +523,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/timo/PR4/sample"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/timo/PR4/sample&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -306,6 +541,14 @@
       <option name="presentableId" value="Default" />
       <updated>1656261453667</updated>
     </task>
+    <task id="LOCAL-00001" summary="added remaining JGiven Tests in Person">
+      <created>1656265342658</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656265342658</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -321,5 +564,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added remaining JGiven Tests in Person" />
+    <option name="LAST_COMMIT_MESSAGE" value="added remaining JGiven Tests in Person" />
   </component>
 </project>
