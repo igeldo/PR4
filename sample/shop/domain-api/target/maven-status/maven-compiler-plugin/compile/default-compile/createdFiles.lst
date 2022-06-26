@@ -1,0 +1,9 @@
+de/conciso/shop/Auftrag.class
+de/conciso/shop/Auftrag$AuftragBuilder.class
+de/conciso/shop/Address.class
+de/conciso/shop/Shop.class
+de/conciso/shop/Lieferadresse$LieferadresseBuilder.class
+de/conciso/shop/Person.class
+de/conciso/shop/Person$PersonBuilder.class
+de/conciso/shop/Lieferadresse.class
+de/conciso/shop/Address$AddressBuilder.class

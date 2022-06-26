@@ -1,384 +1,207 @@
 package de.conciso.shop;
 
+import com.tngtech.jgiven.Stage;
+import com.tngtech.jgiven.annotation.ExpectedScenarioState;
+import com.tngtech.jgiven.annotation.ProvidedScenarioState;
+import com.tngtech.jgiven.junit5.ScenarioTest;
+import org.junit.jupiter.api.Test;
+import org.mockito.BDDMockito;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+import javax.annotation.meta.When;
+import java.util.List;
+import java.util.Optional;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-import java.util.List;
-import java.util.Optional;
+public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenStatement, ShopControllerTest.WhenAction, ShopControllerTest.ThenOutcome> {
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayNameGeneration;
-import org.junit.jupiter.api.DisplayNameGenerator;
-import org.junit.jupiter.api.Nested;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+    private static final int ID = 42;
+    private static final String VORNAME = "someVorname";
+    private static final String NAME = "someName";
+    private static final String STRASSE = "someStrasse";
+    private static final int PLZ = 12345;
+    private static final String ORT = "someOrt";
 
-@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
-@ExtendWith(MockitoExtension.class)
-class ShopControllerTest {
 
-  private static final int ID = 42;
-  private static final String VORNAME = "someVorname";
-  private static final String NAME = "someName";
-  private static final String STRASSE = "someStrasse";
-  private static final int PLZ = 12345;
-  private static final String ORT = "someOrt";
+    /*@Test
+    public void given_Person_can_be_created_when_calling_create(){
+        given().person_can_be_created()
+                .and().personRepresentation();
+        when().creating_Controller()
+                .and().calling_create();
+        then().personenService_is_called()
+                .and().status_is_ok()
+                .and().body_is_correct();
+    }*/
 
-  @Mock
-  Shop personen;
-
-  @InjectMocks
-  ShopController cut;
-
-  @Nested
-  class Given_person_can_be_created {
-
-    @BeforeEach
-    void arrange() {
-      var person = Person.builder()
-          .id(ID)
-          .vorname(VORNAME)
-          .name(NAME)
-          .adresses(List.of())
-          .build();
-      given(personen.createPerson(any(Person.class))).willReturn(person);
+    @Test
+    public void given_create_Person_throws_exception(){
+        given().create_person_throws_exception()
+                .and().personRepresentation();
+        when().creating_Controller()
+                .and().calling_create();
+        then().personenService_is_called()
+                .and().status_is_INTERNAL_SERVER_ERRORT()
+                .and().body_is_empty();
     }
 
-    @Nested
-    class When_calling_create {
-      ResponseEntity<PersonRepresentation> result;
-
-      @BeforeEach
-      void act() {
-        var personRepresentation = PersonRepresentation.builder()
-            .vorname(VORNAME)
-            .name(NAME)
-            .build();
-        result = cut.create(personRepresentation);
-      }
-
-      @Test
-      void then_PersonenService_is_called() {
-        var person = Person.builder()
-            .vorname(VORNAME)
-            .name(NAME)
-            .build();
-        verify(personen).createPerson(person);
-      }
-
-      @Test
-      void then_status_is_OK() {
-        assertThat(result.getStatusCode()).isEqualTo(HttpStatus.OK);
-      }
-
-      @Test
-      void then_body_is_correct() {
-        var expected = PersonRepresentation.builder()
-            .id(ID)
-            .vorname(VORNAME)
-            .name(NAME)
-            .addresses(List.of())
-            .build();
-        assertThat(result.getBody()).isEqualTo(expected);
-      }
-    }
-  }
-
-  @Nested
-  class Given_create_person_throws_exception {
-
-    @BeforeEach
-    void arrange() {
-      given(personen.createPerson(any(Person.class))).willThrow(IllegalStateException.class);
+    @Test
+    public void given_Person_can_be_found_when_calling_findById(){
+        given().person_can_be_found();
+        when().creating_Controller()
+                .and().calling_find_person();
+        then().personenservice_is_called()
+                .and().status_is_ok()
+                .and().body_is_correct();
     }
 
-    @Nested
-    class When_calling_create {
-      ResponseEntity<PersonRepresentation> result;
-
-      @BeforeEach
-      void act() {
-        var personRepresentation = PersonRepresentation.builder()
-            .vorname(VORNAME)
-            .name(NAME)
-            .build();
-        result = cut.create(personRepresentation);
-      }
-
-      @Test
-      void then_PersonenService_is_called() {
-        var person = Person.builder()
-            .vorname(VORNAME)
-            .name(NAME)
-            .build();
-        verify(personen).createPerson(person);
-      }
-
-      @Test
-      void then_status_is_INTERNAL_SERVER_ERRORT() {
-        assertThat(result.getStatusCode()).isEqualTo(HttpStatus.INTERNAL_SERVER_ERROR);
-      }
-
-      @Test
-      void then_body_is_empty() {
-        assertThat(result.hasBody()).isFalse();
-      }
-    }
-  }
-
-  @Nested
-  class Given_person_can_be_found {
-
-    @BeforeEach
-    void arrange() {
-      var person = Person.builder()
-          .id(ID)
-          .vorname(VORNAME)
-          .name(NAME)
-          .adresses(List.of())
-          .build();
-      given(personen.findPerson(anyInt())).willReturn(Optional.of(person));
+    @Test
+    public void given_find_Person_throws_exception(){
+        given().find_person_throws_exception();
+        when().creating_Controller()
+                .and().calling_find_person();
+        then().personenservice_is_called()
+                .and().status_is_INTERNAL_SERVER_ERRORT()
+                .and().body_is_empty();
     }
 
-    @Nested
-    class When_calling_findById {
-      ResponseEntity<PersonRepresentation> result;
 
-      @BeforeEach
-      void act() {
-        result = cut.findPerson(ID);
-      }
+    protected static class GivenStatement extends Stage<GivenStatement> {
 
-      @Test
-      void then_PersonenService_is_called() {
-        verify(personen).findPerson(ID);
-      }
+        @ProvidedScenarioState
+        Shop personen = mock(Shop.class);
 
-      @Test
-      void then_status_is_OK() {
-        assertThat(result.getStatusCode()).isEqualTo(HttpStatus.OK);
-      }
+        @ProvidedScenarioState
+        Person person;
 
-      @Test
-      void then_body_is_correct() {
-        var expected = PersonRepresentation.builder()
-            .id(ID)
-            .vorname(VORNAME)
-            .name(NAME)
-            .addresses(List.of())
-            .build();
-        assertThat(result.getBody()).isEqualTo(expected);
-      }
-    }
-  }
+        @ProvidedScenarioState
+        PersonRepresentation personRepresentation;
+        GivenStatement person_can_be_created(){
+            person = Person.builder()
+                    .id(ID)
+                    .vorname(VORNAME)
+                    .name(NAME)
+                    .adresses(List.of())
+                    .build();
+            return self();
+        }
 
-  @Nested
-  class Given_person_cannot_be_found {
+        GivenStatement personRepresentation(){
+            personRepresentation = PersonRepresentation.builder()
+                    .vorname(VORNAME)
+                    .name(NAME)
+                    .build();
+            return self();
+        }
 
-    @BeforeEach
-    void arrange() {
-      given(personen.findPerson(anyInt())).willReturn(Optional.empty());
-    }
+        GivenStatement create_person_throws_exception(){
+            BDDMockito.given(personen.createPerson(any(Person.class))).willThrow(IllegalStateException.class);
+            return self();
+        }
 
-    @Nested
-    class When_calling_findById {
-      ResponseEntity<PersonRepresentation> result;
+        GivenStatement person_can_be_found(){
+            var person = Person.builder()
+                    .id(ID)
+                    .vorname(VORNAME)
+                    .name(NAME)
+                    .adresses(List.of())
+                    .build();
+            BDDMockito.given(personen.findPerson(anyInt())).willReturn(Optional.of(person));
+            return self();
+        }
 
-      @BeforeEach
-      void act() {
-        result = cut.findPerson(ID);
-      }
-
-      @Test
-      void then_PersonenService_is_called() {
-        verify(personen).findPerson(ID);
-      }
-
-      @Test
-      void then_status_is_NOT_FOUND() {
-        assertThat(result.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
-      }
-
-      @Test
-      void then_body_is_empty() {
-        assertThat(result.hasBody()).isFalse();
-      }
-    }
-  }
-
-  @Nested
-  class Given_find_person_throws_exception {
-
-    @BeforeEach
-    void arrange() {
-      given(personen.findPerson(anyInt())).willThrow(IllegalStateException.class);
+        GivenStatement find_person_throws_exception(){
+            BDDMockito.given(personen.findPerson(anyInt())).willThrow(IllegalStateException.class);
+            return self();
+        }
     }
 
-    @Nested
-    class When_calling_findById {
-      ResponseEntity<PersonRepresentation> result;
+    protected static class WhenAction extends Stage<WhenAction>{
 
-      @BeforeEach
-      void act() {
-        result = cut.findPerson(ID);
-      }
+        @ProvidedScenarioState
+        ResponseEntity<PersonRepresentation> result;
+        @ExpectedScenarioState
+        Shop personen;
+        ShopController cut;
 
-      @Test
-      void then_PersonenService_is_called() {
-        verify(personen).findPerson(ID);
-      }
+        WhenAction creating_Controller(){
+            cut = new ShopController(personen);
+            return self();
+        }
 
-      @Test
-      void then_status_is_INTERNAL_SERVER_ERROR() {
-        assertThat(result.getStatusCode()).isEqualTo(HttpStatus.INTERNAL_SERVER_ERROR);
-      }
+        WhenAction calling_create(){
+            var personRepresentation = PersonRepresentation.builder()
+                    .vorname(VORNAME)
+                    .name(NAME)
+                    .build();
+            result = cut.create(personRepresentation);
+            return self();
+        }
 
-      @Test
-      void then_body_is_empty() {
-        assertThat(result.hasBody()).isFalse();
-      }
-    }
-  }
+        WhenAction calling_find_person(){
+            result = cut.findPerson(ID);
+            return self();
+        }
 
-  @Nested
-  class Given_address_and_adressRepresentation {
-    private Address address;
-    private AddressRepresentation addressRepresentation;
-
-    @BeforeEach
-    void arrange() {
-      address = Address.builder()
-          .strasse(STRASSE)
-          .plz(PLZ)
-          .ort(ORT)
-          .build();
-      addressRepresentation = AddressRepresentation.builder()
-          .strasse(STRASSE)
-          .plz(PLZ)
-          .ort(ORT)
-          .build();
     }
 
-    @Nested
-    class Given_address_can_be_added {
+    protected static class ThenOutcome extends Stage<ThenOutcome>{
 
-      @BeforeEach
-      void arrange() {
-        var person = Person.builder()
-            .id(ID)
-            .vorname(VORNAME)
-            .name(NAME)
-            .adresses(List.of(address))
-            .build();
-        given(personen.addAddress(anyInt(), any(Address.class))).willReturn(Optional.of(person));
-      }
+        @ExpectedScenarioState
+        Shop personen;
 
-      @Nested
-      class When_calling_addAddress {
+        @ExpectedScenarioState
         ResponseEntity<PersonRepresentation> result;
 
-        @BeforeEach
-        void act() {
-          result = cut.addAddress(ID, addressRepresentation);
+        @ExpectedScenarioState
+        Person person;
+
+        ThenOutcome personenService_is_called(){
+            var person = Person.builder()
+                    .vorname(VORNAME)
+                    .name(NAME)
+                    .build();
+            verify(personen).createPerson(person);
+            return self();
         }
 
-        @Test
-        void then_PersonenService_is_called() {
-          verify(personen).addAddress(ID, address);
+        ThenOutcome status_is_ok(){
+            assertThat(result.getStatusCode()).isEqualTo(HttpStatus.OK);
+            return self();
         }
 
-        @Test
-        void then_status_is_OK() {
-          assertThat(result.getStatusCode()).isEqualTo(HttpStatus.OK);
+        ThenOutcome body_is_correct(){
+            var expected = PersonRepresentation.builder()
+                    .id(ID)
+                    .vorname(VORNAME)
+                    .name(NAME)
+                    .addresses(List.of())
+                    .build();
+            assertThat(result.getBody()).isEqualTo(expected);
+            return self();
         }
 
-        @Test
-        void then_body_is_correct() {
-          var expected = PersonRepresentation.builder()
-              .id(ID)
-              .vorname(VORNAME)
-              .name(NAME)
-              .addresses(List.of(addressRepresentation))
-              .build();
-          assertThat(result.getBody()).isEqualTo(expected);
+        ThenOutcome status_is_INTERNAL_SERVER_ERRORT(){
+            assertThat(result.getStatusCode()).isEqualTo(HttpStatus.INTERNAL_SERVER_ERROR);
+            return self();
         }
-      }
+
+        ThenOutcome body_is_empty(){
+            assertThat(result.hasBody()).isFalse();
+            return self();
+        }
+
+        ThenOutcome personenservice_is_called(){
+            verify(personen).findPerson(ID);
+            return self();
+        }
+
     }
-
-    @Nested
-    class Given_address_cannot_be_added {
-
-      @BeforeEach
-      void arrange() {
-        given(personen.addAddress(anyInt(), any(Address.class))).willReturn(Optional.empty());
-      }
-
-      @Nested
-      class When_calling_addAddress {
-        ResponseEntity<PersonRepresentation> result;
-
-        @BeforeEach
-        void act() {
-          result = cut.addAddress(ID, addressRepresentation);
-        }
-
-        @Test
-        void then_PersonenService_is_called() {
-          verify(personen).addAddress(ID, address);
-        }
-
-        @Test
-        void then_status_is_NOT_FOUND() {
-          assertThat(result.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
-        }
-
-        @Test
-        void then_body_is_empty() {
-          assertThat(result.hasBody()).isFalse();
-        }
-      }
-    }
-
-    @Nested
-    class Given_addAddress_throws_exception {
-
-      @BeforeEach
-      void arrange() {
-        given(personen.addAddress(anyInt(), any(Address.class))).willThrow(IllegalStateException.class);
-      }
-
-      @Nested
-      class When_calling_addAddress {
-        ResponseEntity<PersonRepresentation> result;
-
-        @BeforeEach
-        void act() {
-          result = cut.addAddress(ID, addressRepresentation);
-        }
-
-        @Test
-        void then_PersonenService_is_called() {
-          verify(personen).addAddress(ID, address);
-        }
-
-        @Test
-        void then_status_is_INTERNAL_SERVER_ERROR() {
-          assertThat(result.getStatusCode()).isEqualTo(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-
-        @Test
-        void then_body_is_empty() {
-          assertThat(result.hasBody()).isFalse();
-        }
-      }
-    }
-  }
 }

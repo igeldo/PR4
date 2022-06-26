@@ -1,0 +1,11 @@
+de/conciso/shop/AuftragRestClientRepresentation.class
+de/conciso/shop/LieferadresseRestClientRepresentation.class
+de/conciso/shop/InfrastructureConfiguration.class
+de/conciso/shop/AuftragRestClientRepresentation$AuftragRestClientRepresentationBuilder.class
+de/conciso/shop/AddressRestClientRepresentation.class
+de/conciso/shop/LieferadresseRestClientRepresentation$LieferadresseRestClientRepresentationBuilder.class
+de/conciso/shop/AuftraegeRestClient.class
+de/conciso/shop/PersonRestClientRepresentation.class
+de/conciso/shop/PersonRestClient.class
+de/conciso/shop/AddressRestClientRepresentation$AddressRestClientRepresentationBuilder.class
+de/conciso/shop/PersonRestClientRepresentation$PersonRestClientRepresentationBuilder.class

@@ -1,0 +1,1135 @@
+{
+  "className": "de.conciso.person.PersonControllerTest",
+  "name": "Person Controller",
+  "scenarios": [
+    {
+      "className": "de.conciso.person.PersonControllerTest",
+      "testMethodName": "given_address_cannot_be_added",
+      "description": "given address cannot be added",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "address cannot be added",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "address cannot be added"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 13812930,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 496287,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling addAddress",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling addAddress"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 22270202,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "personenservice is called addAddress",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "personenservice is called addAddress"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 4616750,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is NOT FOUND",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is NOT FOUND"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 43897871,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is empty",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is empty"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 762701,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 109935845
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 109935845
+    },
+    {
+      "className": "de.conciso.person.PersonControllerTest",
+      "testMethodName": "given_person_cannot_be_found",
+      "description": "given person cannot be found",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "create person Representation",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create person Representation"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 854333,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "create Person",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create Person"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 318101,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "person cannot be found",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "person cannot be found"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 934375,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 298975,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling findById",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling findById"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 820090,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "personenService is called findById",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "personenService is called findById"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 683431,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is NOT FOUND",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is NOT FOUND"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 258819,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is empty",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is empty"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 1135464,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 6490569
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 6490569
+    },
+    {
+      "className": "de.conciso.person.PersonControllerTest",
+      "testMethodName": "given_create_person_throws_exception",
+      "description": "given create person throws exception",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "create person Representation",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create person Representation"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 304655,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "create Person",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create Person"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 131168,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "create person throws exception",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create person throws exception"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 1511665,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 164200,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling create",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling create"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 333881,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "personenService is called",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "personenService is called"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 443007,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is INTERNAL SERVER ERROR",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is INTERNAL SERVER ERROR"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 215507,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is empty",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is empty"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 103014,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 4158635
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 4158635
+    },
+    {
+      "className": "de.conciso.person.PersonControllerTest",
+      "testMethodName": "given_addAddress_throws_exception",
+      "description": "given addAddress throws exception",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "addAddress throws exception",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "addAddress throws exception"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 652412,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 193335,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling addAddress",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling addAddress"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 454719,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "personenservice is called addAddress",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "personenservice is called addAddress"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 591537,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is INTERNAL SERVER ERROR",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is INTERNAL SERVER ERROR"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 307180,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is empty",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is empty"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 108996,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 3168834
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 3168834
+    },
+    {
+      "className": "de.conciso.person.PersonControllerTest",
+      "testMethodName": "given_Person_can_be_created_when_calling_create",
+      "description": "given Person can be created when calling create",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "create person Representation",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create person Representation"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 181002,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "create Person",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create Person"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 89619,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "person can be created",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "person can be created"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 446774,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 111981,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling create",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling create"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 603018,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "personenService is called",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "personenService is called"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 458536,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is OK",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is OK"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 143390,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is correct",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is correct"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 214495,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 3130252
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 3130252
+    },
+    {
+      "className": "de.conciso.person.PersonControllerTest",
+      "testMethodName": "given_person_can_be_found",
+      "description": "given person can be found",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "create person Representation",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create person Representation"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 208153,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "create Person",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create Person"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 96382,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "person can be found",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "person can be found"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 546703,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 146336,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling findById",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling findById"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 279138,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "personenService is called findById",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "personenService is called findById"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 429070,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is OK",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is OK"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 96052,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is correct",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is correct"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 108024,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 2751718
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 2751718
+    },
+    {
+      "className": "de.conciso.person.PersonControllerTest",
+      "testMethodName": "given_find_person_throws_exception",
+      "description": "given find person throws exception",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "create person Representation",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create person Representation"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 189498,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "create Person",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create Person"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 74431,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "find person throws exception",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "find person throws exception"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 566991,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 78518,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling findById",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling findById"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 226909,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "personenService is called findById",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "personenService is called findById"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 348167,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is INTERNAL SERVER ERROR",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is INTERNAL SERVER ERROR"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 3791631,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is empty",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is empty"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 112292,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 6436746
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 6436746
+    },
+    {
+      "className": "de.conciso.person.PersonControllerTest",
+      "testMethodName": "given_address_can_be_added_when_calling_addAddress",
+      "description": "given address can be added when calling addAddress",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "create person Representation",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create person Representation"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 137540,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "create Person",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create Person"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 78688,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "address can be added",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "address can be added"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 473284,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 100089,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling addAddress",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling addAddress"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 227349,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "personenservice is called addAddress",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "personenservice is called addAddress"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 356574,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is OK",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is OK"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 63851,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is correct",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is correct"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 102634,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 2300586
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 2300586
+    }
+  ],
+  "tagMap": {}
+}

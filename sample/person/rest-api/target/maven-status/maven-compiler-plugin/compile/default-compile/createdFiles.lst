@@ -1,0 +1,5 @@
+de/conciso/person/PersonRepresentation.class
+de/conciso/person/PersonController.class
+de/conciso/person/AddressRepresentation$AddressRepresentationBuilder.class
+de/conciso/person/AddressRepresentation.class
+de/conciso/person/PersonRepresentation$PersonRepresentationBuilder.class

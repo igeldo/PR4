@@ -15,6 +15,7 @@ import java.util.Optional;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
+import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
@@ -87,6 +88,38 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
                 .and().body_is_empty();
     }
 
+    @Test
+    public void given_address_can_be_added_when_calling_addAddress(){
+        given().create_person_Representation()
+                .and().create_Person()
+                .and().address_can_be_added();
+        when().creating_Controller()
+                .and().calling_addAddress();
+        then().personenservice_is_called_addAddress()
+                .and().status_is_OK()
+                .and().body_is_correct();
+    }
+
+    @Test
+    public void given_address_cannot_be_added(){
+        given().address_cannot_be_added();
+        when().creating_Controller()
+                .and().calling_addAddress();
+        then().personenservice_is_called_addAddress()
+                .and().status_is_NOT_FOUND()
+                .and().body_is_empty();
+    }
+
+    @Test
+    public void given_addAddress_throws_exception(){
+        given().addAddress_throws_exception();
+        when().creating_Controller()
+                .and().calling_addAddress();
+        then().personenservice_is_called_addAddress()
+                .and().status_is_INTERNAL_SERVER_ERROR()
+                .and().body_is_empty();
+    }
+
     protected static class GivenStatement extends Stage<GivenStatement>{
 
         @ProvidedScenarioState
@@ -133,6 +166,23 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
             return self();
         }
 
+
+
+        GivenStatement address_can_be_added(){
+            BDDMockito.given(personen.addAddress(anyInt(), any(Address.class))).willReturn(Optional.of(person));
+            return self();
+        }
+
+        GivenStatement address_cannot_be_added(){
+            BDDMockito.given(personen.addAddress(anyInt(), any(Address.class))).willReturn(Optional.empty());
+            return self();
+        }
+
+        GivenStatement addAddress_throws_exception(){
+            BDDMockito.given(personen.addAddress(anyInt(), any(Address.class))).willThrow(IllegalStateException.class);
+            return self();
+        }
+
     }
 
     protected static class WhenAction extends Stage<WhenAction>{
@@ -159,6 +209,16 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
 
         WhenAction calling_findById(){
             result = cut.findById(ID);
+            return self();
+        }
+
+        WhenAction calling_addAddress(){
+            var addressRepresentation = AddressRepresentation.builder()
+                    .strasse(STRASSE)
+                    .plz(PLZ)
+                    .ort(ORT)
+                    .build();
+            result = cut.addAddress(ID, addressRepresentation);
             return self();
         }
 
@@ -212,5 +272,13 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
             assertThat(result.hasBody()).isFalse();
             return self();
         }
+
+
+
+        ThenOutcome personenservice_is_called_addAddress(){
+            verify(personen).addAddress(ID, new Address(STRASSE, PLZ, ORT));
+            return self();
+        }
+
     }
 }

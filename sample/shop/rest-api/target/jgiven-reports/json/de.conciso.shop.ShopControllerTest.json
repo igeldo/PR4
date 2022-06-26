@@ -1,0 +1,374 @@
+{
+  "className": "de.conciso.shop.ShopControllerTest",
+  "name": "Shop Controller",
+  "scenarios": [
+    {
+      "className": "de.conciso.shop.ShopControllerTest",
+      "testMethodName": "given_create_Person_throws_exception",
+      "description": "given create Person throws exception",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "create person throws exception",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create person throws exception"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 12854992,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "person representation",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "person representation"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 714637,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 506722,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling create",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling create"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 18638170,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "personenService is called",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "personenService is called"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 4980044,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is INTERNAL SERVER ERRORT",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is INTERNAL SERVER ERRORT"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 67698211,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is empty",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is empty"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 560695,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 129384090
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 129384090
+    },
+    {
+      "className": "de.conciso.shop.ShopControllerTest",
+      "testMethodName": "given_Person_can_be_found_when_calling_findById",
+      "description": "given Person can be found when calling findById",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "person can be found",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "person can be found"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 2705138,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 417673,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling find person",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling find person"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 2416970,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "personenservice is called",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "personenservice is called"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 629726,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is ok",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is ok"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 223094,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is correct",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is correct"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 227582,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 7609895
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 7609895
+    },
+    {
+      "className": "de.conciso.shop.ShopControllerTest",
+      "testMethodName": "given_find_Person_throws_exception",
+      "description": "given find Person throws exception",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "find person throws exception",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "find person throws exception"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 616150,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 200891,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling find person",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling find person"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 576736,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "personenservice is called",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "personenservice is called"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 479581,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is INTERNAL SERVER ERRORT",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is INTERNAL SERVER ERRORT"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 388728,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is empty",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is empty"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 155215,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 3074190
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 3074190
+    }
+  ],
+  "tagMap": {}
+}
