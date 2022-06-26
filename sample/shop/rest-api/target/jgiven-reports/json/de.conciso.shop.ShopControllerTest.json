@@ -25,7 +25,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 12854992,
+              "durationInNanos": 13746882,
               "depth": 0,
               "parentFailed": false
             },
@@ -41,7 +41,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 714637,
+              "durationInNanos": 773031,
               "depth": 0,
               "parentFailed": false
             },
@@ -57,7 +57,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 506722,
+              "durationInNanos": 481490,
               "depth": 0,
               "parentFailed": false
             },
@@ -73,7 +73,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 18638170,
+              "durationInNanos": 13886556,
               "depth": 0,
               "parentFailed": false
             },
@@ -89,23 +89,23 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 4980044,
+              "durationInNanos": 5873901,
               "depth": 0,
               "parentFailed": false
             },
             {
-              "name": "status is INTERNAL SERVER ERRORT",
+              "name": "status is INTERNAL SERVER ERROR",
               "words": [
                 {
                   "value": "and",
                   "isIntroWord": true
                 },
                 {
-                  "value": "status is INTERNAL SERVER ERRORT"
+                  "value": "status is INTERNAL SERVER ERROR"
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 67698211,
+              "durationInNanos": 46005609,
               "depth": 0,
               "parentFailed": false
             },
@@ -121,7 +121,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 560695,
+              "durationInNanos": 693300,
               "depth": 0,
               "parentFailed": false
             }
@@ -129,11 +129,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 129384090
+          "durationInNanos": 105493395
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 129384090
+      "durationInNanos": 105493395
     },
     {
       "className": "de.conciso.shop.ShopControllerTest",
@@ -158,7 +158,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 2705138,
+              "durationInNanos": 3782277,
               "depth": 0,
               "parentFailed": false
             },
@@ -174,7 +174,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 417673,
+              "durationInNanos": 473364,
               "depth": 0,
               "parentFailed": false
             },
@@ -190,7 +190,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 2416970,
+              "durationInNanos": 2035116,
               "depth": 0,
               "parentFailed": false
             },
@@ -206,7 +206,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 629726,
+              "durationInNanos": 753755,
               "depth": 0,
               "parentFailed": false
             },
@@ -222,7 +222,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 223094,
+              "durationInNanos": 134154,
               "depth": 0,
               "parentFailed": false
             },
@@ -238,7 +238,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 227582,
+              "durationInNanos": 218954,
               "depth": 0,
               "parentFailed": false
             }
@@ -246,11 +246,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 7609895
+          "durationInNanos": 8450007
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 7609895
+      "durationInNanos": 8450007
     },
     {
       "className": "de.conciso.shop.ShopControllerTest",
@@ -275,7 +275,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 616150,
+              "durationInNanos": 626033,
               "depth": 0,
               "parentFailed": false
             },
@@ -291,7 +291,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 200891,
+              "durationInNanos": 247718,
               "depth": 0,
               "parentFailed": false
             },
@@ -307,7 +307,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 576736,
+              "durationInNanos": 812385,
               "depth": 0,
               "parentFailed": false
             },
@@ -323,23 +323,23 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 479581,
+              "durationInNanos": 867970,
               "depth": 0,
               "parentFailed": false
             },
             {
-              "name": "status is INTERNAL SERVER ERRORT",
+              "name": "status is INTERNAL SERVER ERROR",
               "words": [
                 {
                   "value": "and",
                   "isIntroWord": true
                 },
                 {
-                  "value": "status is INTERNAL SERVER ERRORT"
+                  "value": "status is INTERNAL SERVER ERROR"
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 388728,
+              "durationInNanos": 387502,
               "depth": 0,
               "parentFailed": false
             },
@@ -355,7 +355,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 155215,
+              "durationInNanos": 179779,
               "depth": 0,
               "parentFailed": false
             }
@@ -363,11 +363,144 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 3074190
+          "durationInNanos": 4016422
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 3074190
+      "durationInNanos": 4016422
+    },
+    {
+      "className": "de.conciso.shop.ShopControllerTest",
+      "testMethodName": "given_Person_can_be_created_when_calling_create",
+      "description": "given Person can be created when calling create",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "person can be created",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "person can be created"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 839276,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "person representation",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "person representation"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 276081,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 276222,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling create",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling create"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 376131,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "personenService is called",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "personenService is called"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 601868,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is ok",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is ok"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 174309,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is correct",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is correct"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 190199,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 3696055
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 3696055
     }
   ],
   "tagMap": {}

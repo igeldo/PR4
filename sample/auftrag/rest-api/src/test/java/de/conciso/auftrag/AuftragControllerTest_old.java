@@ -23,7 +23,7 @@ import org.springframework.http.ResponseEntity;
 
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 @ExtendWith(MockitoExtension.class)
-class AuftragControllerTestMockito {
+class AuftragControllerTest_old {
 
   private static final String BESTELL_NUMMER = "someBestellNummer";
   private static final int ID = 42;

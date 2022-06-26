@@ -9,7 +9,6 @@ import org.mockito.BDDMockito;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import javax.annotation.meta.When;
 import java.util.List;
 import java.util.Optional;
 
@@ -30,7 +29,7 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
     private static final String ORT = "someOrt";
 
 
-    /*@Test
+    @Test
     public void given_Person_can_be_created_when_calling_create(){
         given().person_can_be_created()
                 .and().personRepresentation();
@@ -39,7 +38,7 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
         then().personenService_is_called()
                 .and().status_is_ok()
                 .and().body_is_correct();
-    }*/
+    }
 
     @Test
     public void given_create_Person_throws_exception(){
@@ -48,7 +47,7 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
         when().creating_Controller()
                 .and().calling_create();
         then().personenService_is_called()
-                .and().status_is_INTERNAL_SERVER_ERRORT()
+                .and().status_is_INTERNAL_SERVER_ERROR()
                 .and().body_is_empty();
     }
 
@@ -68,7 +67,7 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
         when().creating_Controller()
                 .and().calling_find_person();
         then().personenservice_is_called()
-                .and().status_is_INTERNAL_SERVER_ERRORT()
+                .and().status_is_INTERNAL_SERVER_ERROR()
                 .and().body_is_empty();
     }
 
@@ -90,6 +89,7 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
                     .name(NAME)
                     .adresses(List.of())
                     .build();
+            BDDMockito.given(personen.createPerson(any(Person.class))).willReturn(person);
             return self();
         }
 
@@ -129,6 +129,10 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
         ResponseEntity<PersonRepresentation> result;
         @ExpectedScenarioState
         Shop personen;
+
+        @ExpectedScenarioState
+        PersonRepresentation personRepresentation;
+
         ShopController cut;
 
         WhenAction creating_Controller(){
@@ -137,10 +141,6 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
         }
 
         WhenAction calling_create(){
-            var personRepresentation = PersonRepresentation.builder()
-                    .vorname(VORNAME)
-                    .name(NAME)
-                    .build();
             result = cut.create(personRepresentation);
             return self();
         }
@@ -188,7 +188,7 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
             return self();
         }
 
-        ThenOutcome status_is_INTERNAL_SERVER_ERRORT(){
+        ThenOutcome status_is_INTERNAL_SERVER_ERROR(){
             assertThat(result.getStatusCode()).isEqualTo(HttpStatus.INTERNAL_SERVER_ERROR);
             return self();
         }
