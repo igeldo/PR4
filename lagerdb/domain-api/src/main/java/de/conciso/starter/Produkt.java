@@ -7,7 +7,9 @@ import lombok.Data;
 @Data
 public class Produkt {
 
-  int id;
+  @Id
+  @GeneratedValue(strategy=GenerationType.AUTO)
+  private int id;
   String name;
   long preis;
   Collection<Zutat> zutaten;
@@ -16,15 +18,10 @@ public class Produkt {
     this = produkt;
   }
 
-  public Produkt(int id, String name, long preis, Collection<Zutat> zutaten) {
-    setId(id);
+  public Produkt(String name, long preis, Collection<Zutat> zutaten) {
     setName(name);
     setPreis(preis);
     setZutaten(zutaten);
-  }
-
-  public void setId(int id) {
-    this.id = id;
   }
 
   public void setName(String name) {

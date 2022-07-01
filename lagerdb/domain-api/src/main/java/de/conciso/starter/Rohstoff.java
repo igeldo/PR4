@@ -5,19 +5,17 @@ import lombok.Data;
 @Data
 public class Rohstoff {
 
-  int id;
+  @Id
+  @GeneratedValue(strategy=GenerationType.AUTO)
+  private int id;
   String name;
   char code;
   String gebinde;
 
-  public Rohstoff (int id, String name, char code, String gebinde){
-    setId(id);
+  public Rohstoff (String name, char code, String gebinde){
     setName(name);
     setCode(code);
     setGebinde(gebinde);
-  }
-  public void setId (int id) {
-    this.id = id;
   }
 
   public int getId() {

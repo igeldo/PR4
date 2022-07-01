@@ -5,7 +5,9 @@ import lombok.Data;
 @Data
 public class Lager {
 
-  int id;
+  @Id
+  @GeneratedValue(strategy=GenerationType.AUTO)
+  private int id;
   String ort;
   char code;
   int kapazitaet;
@@ -14,15 +16,10 @@ public class Lager {
     this = lager;
   }
 
-  public Lager(int id, String ort, char code, int kapazitaet) {
-    setId(id);
+  public Lager(String ort, char code, int kapazitaet) {
     setOrt(ort);
     setCode(code);
     setKapazitaet(kapazitaet);
-  }
-
-  public void setId(int id) {
-    this.id = id;
   }
 
   public void setOrt(String ort) {

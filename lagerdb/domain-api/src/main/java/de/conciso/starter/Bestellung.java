@@ -5,20 +5,17 @@ import lombok.Data;
 @Data
 public class Bestellung {
 
-  int id;
+  @Id
+  @GeneratedValue(strategy=GenerationType.AUTO)
+  private int id;
   Produkt produkt;
   int anzahl;
   Bestellstatus status;
 
-  public Bestellung (int id, Produkt produkt, int anzahl, Bestellstatus status) {
-      setId(id);
+  public Bestellung (Produkt produkt, int anzahl, Bestellstatus status) {
       setProdukt(produkt);
       setAnzahl(anzahl);
       setStatus(status);
-  }
-
-  public void setId(int id) {
-    this.id = id;
   }
 
   public int getId() {
