@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="domain-api" target="1.5" />
+      <module name="lagerdb" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

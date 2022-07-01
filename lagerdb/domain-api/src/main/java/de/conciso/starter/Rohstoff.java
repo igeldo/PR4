@@ -9,4 +9,5 @@ public class Rohstoff {
   String name;
   char code;
   String gebinde;
+
 }
