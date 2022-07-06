@@ -17,8 +17,6 @@
     <modules>
         <module>domain-api</module>
         <module>domain-core</module>
-        <module>infrastructure</module>
-        <module>rest-api</module>
         <module>app</module>
         <module>docker</module>
     </modules>
