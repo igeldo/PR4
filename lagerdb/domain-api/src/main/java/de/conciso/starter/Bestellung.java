@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Data
 @NoArgsConstructor
@@ -15,6 +16,7 @@ public class Bestellung {
 
   @Id
   private int id;
+  @OneToMany
   Produkt produkt;
   int anzahl;
   Bestellstatus status;
