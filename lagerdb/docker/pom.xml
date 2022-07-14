@@ -57,7 +57,7 @@
                                     <alias>java-starter</alias>
                                 </network>
                                 <ports>
-                                    <port>8080:8080</port>
+                                    <port>5432:5432</port>
                                 </ports>
                             </run>
                         </image>
