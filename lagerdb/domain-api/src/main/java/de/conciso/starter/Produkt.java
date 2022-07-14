@@ -7,6 +7,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 
 @Data
 @NoArgsConstructor
@@ -17,6 +19,8 @@ public class Produkt {
   private int id;
   String name;
   long preis;
+  @OneToMany
+  @JoinColumn(name="produktId", referencedColumnName = "id")
   Collection<Zutat> zutaten;
 
 }

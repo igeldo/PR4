@@ -16,7 +16,6 @@ public class Bestellung {
 
   @Id
   private int id;
-  @OneToMany
   Produkt produkt;
   int anzahl;
   Bestellstatus status;
