@@ -6,5 +6,5 @@ public interface Bestellungen {
 
   Bestellung bestelle(String kunde, int produktId, int anzahl);
 
-  Optional<Bestellung> findById(String id);
+  Optional<Bestellung> findById(int id);
 }

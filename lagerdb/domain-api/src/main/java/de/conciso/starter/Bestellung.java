@@ -4,9 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
@@ -15,9 +13,16 @@ import javax.persistence.OneToMany;
 public class Bestellung {
 
   @Id
+  @GeneratedValue(strategy= GenerationType.AUTO)
   private int id;
-  Produkt produkt;
+  //Produkt produkt;
+  int produktId;
   int anzahl;
   Bestellstatus status;
 
+  public Bestellung(int produktId, int anzahl, Bestellstatus status) {
+    this.produktId = produktId;
+    this.anzahl = anzahl;
+    this.status = status;
+  }
 }
