@@ -18,9 +18,10 @@ public class BestellungenService implements Bestellungen {
     }
 
     @Override
-    public Bestellung bestelle(String kunde, int produktId, int anzahl, Bestellstatus status) {
-        var bestellung = new Bestellung(produktId, anzahl, status);
-        logger.info("create Bestellung: " + bestellung.getProduktId() + " for " + kunde);
+    public Bestellung bestelle(String kunde, int produktId, int anzahl) {
+        var bestellung = new Bestellung(produktId, anzahl);
+        logger.info("create Bestellung: " + bestellung.getId() +
+                " for " + kunde + ". Status is " + bestellung.getStatus());
         return bestellungDAO.save(bestellung);
     }
 

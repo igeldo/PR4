@@ -20,9 +20,9 @@ public class Bestellung {
   int anzahl;
   Bestellstatus status;
 
-  public Bestellung(int produktId, int anzahl, Bestellstatus status) {
+  public Bestellung(int produktId, int anzahl) {
     this.produktId = produktId;
     this.anzahl = anzahl;
-    this.status = status;
+    this.status = Bestellstatus.WARTEN_AUF_ROHSTOFFE;
   }
 }
