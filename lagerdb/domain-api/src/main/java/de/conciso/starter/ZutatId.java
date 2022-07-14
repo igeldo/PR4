@@ -10,4 +10,5 @@ import java.io.Serializable;
 public class ZutatId implements Serializable {
     int produktId;
     int rohstoffId;
+    // equals() and hashCode()
 }

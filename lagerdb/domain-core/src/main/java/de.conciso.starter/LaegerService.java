@@ -13,7 +13,7 @@ public class LaegerService implements Laeger {
 
     private final LagerDAO lagerDAO;
 
-    public LagerService(LagerDAO lagerDAO) {
+    public LaegerService(LagerDAO lagerDAO) {
         this.lagerDAO = lagerDAO;
     }
 
@@ -35,7 +35,7 @@ public class LaegerService implements Laeger {
     }
 
     @Override
-    void lagereEin(int lagerId, int rohstoffId, int menge){
+    public void lagereEin(int lagerId, int rohstoffId, int menge){
 
     }
 }
