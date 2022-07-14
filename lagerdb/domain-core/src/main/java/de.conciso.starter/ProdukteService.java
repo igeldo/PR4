@@ -1,11 +1,11 @@
 package de.conciso.starter;
 
+import java.util.Collection;
 import java.util.Optional;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class ProdukteService implements Produkte {
@@ -19,9 +19,10 @@ public class ProdukteService implements Produkte {
     }
 
     @Override
-    public Produkt create(Produkt produkt) {
+    public Produkt erzeuge(int id, String name, long preis, Collection<Zutat> zutaten) {
+        var produkt = new Produkt(id, name, preis, zutaten);
         logger.info("create produkt " + produkt.getName());
-        return produktDAO.save(Produkt);
+        return produktDAO.save(produkt);
     }
 
     @Override

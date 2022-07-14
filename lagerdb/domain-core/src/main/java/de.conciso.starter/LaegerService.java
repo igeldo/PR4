@@ -5,7 +5,6 @@ import java.util.Optional;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class LaegerService implements Laeger {
@@ -19,9 +18,10 @@ public class LaegerService implements Laeger {
     }
 
     @Override
-    public Lager create(Lager lager) {
-        logger.info("create lager " + lager.getName());
-        return lagerDAO.save(Lager);
+    public Lager erzeuge(int id, String ort, char code, int kapazitaet) {
+        var lager = new Lager(id, ort,code, kapazitaet);
+        logger.info("create lager " + lager.getCode());
+        return lagerDAO.save(lager);
     }
 
     @Override
@@ -32,5 +32,10 @@ public class LaegerService implements Laeger {
             logger.warn("no lager found with id: " + id);
         }
         return found;
+    }
+
+    @Override
+    void lagereEin(int lagerId, int rohstoffId, int menge){
+
     }
 }

@@ -19,6 +19,7 @@
         <module>domain-core</module>
         <module>app</module>
         <module>docker</module>
+        <module>infrastructure</module>
     </modules>
 
     <properties>
@@ -59,32 +60,32 @@
         <dependencies>
             <!-- our modules -->
             <dependency>
-                <groupId>de.conciso.person</groupId>
+                <groupId>de.conciso.starter</groupId>
                 <artifactId>domain-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>de.conciso.person</groupId>
+                <groupId>de.conciso.starter</groupId>
                 <artifactId>domain-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>de.conciso.person</groupId>
+                <groupId>de.conciso.starter</groupId>
                 <artifactId>infrastructure</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>de.conciso.person</groupId>
+                <groupId>de.conciso.starter</groupId>
                 <artifactId>rest-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>de.conciso.person</groupId>
+                <groupId>de.conciso.starter</groupId>
                 <artifactId>app</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>de.conciso.person</groupId>
+                <groupId>de.conciso.starter</groupId>
                 <artifactId>docker</artifactId>
                 <version>${project.version}</version>
             </dependency>

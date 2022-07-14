@@ -6,7 +6,7 @@ public interface Laeger {
 
   Lager erzeuge(int id, String ort, char code, int kapazitaet);
 
-  Optional<Lager> findById(String id);
+  Optional<Lager> findById(int id);
 
   void lagereEin(int lagerId, int rohstoffId, int menge);
 }

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="app" />
         <module name="domain-api" />
+        <module name="infrastructure" />
         <module name="docker" />
         <module name="domain-core" />
       </profile>
@@ -19,6 +20,7 @@
       <module name="docker" options="-parameters" />
       <module name="domain-api" options="-parameters" />
       <module name="domain-core" options="-parameters" />
+      <module name="infrastructure" options="-parameters" />
     </option>
   </component>
 </project>
