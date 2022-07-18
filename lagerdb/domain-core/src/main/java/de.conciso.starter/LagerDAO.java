@@ -5,4 +5,5 @@ import java.util.Optional;
 public interface LagerDAO {
     Lager save(Lager lager);
     Optional<Lager> findById(int id);
+    Optional<Lager> findByCode(char code);
 }
