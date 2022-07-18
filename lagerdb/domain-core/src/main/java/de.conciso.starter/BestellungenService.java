@@ -37,6 +37,7 @@ public class BestellungenService implements Bestellungen {
             r_bedarf.add(zutat.getMenge() * anzahl);
         }
         // Schaue was vorhanden ist
+        //...
         return bestellungDAO.save(bestellung);
     }
 

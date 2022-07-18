@@ -33,18 +33,7 @@ public class LaegerService implements Laeger {
         }
         return found;
     }
-    /*
-    * Suche nach Lager mit gegebenen Code
-    * @author Patrick Frenken
-    */
-    public Optional<Lager> findByCode(char code) {
-        logger.info("looking for lager with code: " + code);
-        var found = lagerDAO.findByCode(code);
-        if (found.isEmpty()) {
-            logger.warn("no lager found with code: " + code);
-        }
-        return found;
-    }
+
     @Override
     public void lagereEin(int lagerId, int rohstoffId, int menge){
 
