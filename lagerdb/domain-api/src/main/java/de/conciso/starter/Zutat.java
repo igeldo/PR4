@@ -1,34 +1,16 @@
 package de.conciso.starter;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-public class Zutat {
+@NoArgsConstructor
+@AllArgsConstructor
+public class Zutat  {
+  //composite key in jpa
+  // https://www.baeldung.com/jpa-composite-primary-keys
   int rohstoffId;
+  int produktId;
   int menge;
-
-  public Zutat(Zutat zutat) {
-    this = zutat;
-  }
-
-  public Zutat(int rohstoffId, int menge) {
-    setRohstoffId(rohstoffId);
-    setMenge(menge);
-  }
-
-  public void setRohstoffId(int rohstoffId) {
-    this.rohstoffId = rohstoffId;
-  }
-
-  public void setMenge(int menge) {
-    this.menge = menge;
-  }
-
-  public int getRohstoffId() {
-    return rohstoffId;
-  }
-
-  public int getMenge() {
-    return menge;
-  }
 }

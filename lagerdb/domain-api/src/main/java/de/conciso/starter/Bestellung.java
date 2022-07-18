@@ -1,48 +1,30 @@
 package de.conciso.starter;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
 public class Bestellung {
 
   @Id
-  @GeneratedValue(strategy=GenerationType.AUTO)
+  @GeneratedValue(strategy= GenerationType.AUTO)
   private int id;
+  @OneToOne
   Produkt produkt;
+  //int produktId;
   int anzahl;
   Bestellstatus status;
 
-  public Bestellung (Produkt produkt, int anzahl, Bestellstatus status) {
-      setProdukt(produkt);
-      setAnzahl(anzahl);
-      setStatus(status);
-  }
-
-  public int getId() {
-    return id;
-  }
-
-  public void setProdukt(Produkt produkt) {
+  public Bestellung(Produkt produkt, int anzahl) {
+    //this.produktId = produktId;
     this.produkt = produkt;
-  }
-
-  public Produkt getProdukt() {
-    return produkt;
-  }
-
-  public void setAnzahl(int anzahl) {
     this.anzahl = anzahl;
-  }
-
-  public int getAnzahl() {
-    return anzahl;
-  }
-
-  public void setStatus(Bestellstatus status) {
-    this.status = status;
-  }
-
-  public Bestellstatus getStatus() {
-    return status;
+    this.status = Bestellstatus.WARTEN_AUF_ROHSTOFFE;
   }
 }

@@ -1,28 +1,15 @@
 package de.conciso.starter;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Einkauf {
 
   Rohstoff rohstoff;
   int menge;
 
-  public Einkauf (Rohstoff rohstoff, int menge) {
-    setRohstoff(rohstoff);
-    setMenge(menge);
-  }
-
-  public void setRohstoff(Rohstoff rohstoff) {
-    this.rohstoff = rohstoff;
-  }
-
-  public Rohstoff getRohstoff() {
-    return rohstoff;
-  }
-
-  public void setMenge(int menge) {
-    this.menge = menge;
-  }
-
-  public int getMenge() {
-    return menge;
-  }
 }
