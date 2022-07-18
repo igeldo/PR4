@@ -8,5 +8,6 @@ public interface Laeger {
 
   Optional<Lager> findById(int id);
 
+  // um ins Lager hinzuzufügen nach LagerId
   void lagereEin(int lagerId, int rohstoffId, int menge);
 }

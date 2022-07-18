@@ -18,8 +18,7 @@ public class Produkt {
   private int id;
   String name;
   long preis;
-  @OneToMany(cascade = CascadeType.ALL)
-  //@JoinColumn(name="produktId", referencedColumnName = "id")
+  @ManyToMany(cascade = CascadeType.ALL)
   Collection<Zutat> zutaten;
 
   public void addZutaten(Zutat zutat){

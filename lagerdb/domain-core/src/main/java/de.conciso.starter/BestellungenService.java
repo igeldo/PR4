@@ -23,12 +23,12 @@ public class BestellungenService implements Bestellungen {
 
     @Override
     public Bestellung bestelle(String kunde, int produktId, int anzahl) {
-        var bestellung = new Bestellung(produktId, anzahl);
+        var produkt = produktDAO.findById(produktId).orElseThrow(); //Exception handling ergänzen
+        var bestellung = new Bestellung(produkt, anzahl);
         logger.info("create Bestellung: " + bestellung.getId() +
                 " for " + kunde + ". Status is " + bestellung.getStatus());
-        var produkt = produktDAO.findById(produktId);
         // Ermittle Zutaten
-        Collection<Zutat> zutaten = produkt.get().getZutaten();
+        Collection<Zutat> zutaten = produkt.getZutaten();
         // Filtere Zutaten und Bedarf --> in Listen Packen
         ArrayList<Integer> rohstoffeID = new ArrayList<>();
         ArrayList<Integer> r_bedarf = new ArrayList<>();

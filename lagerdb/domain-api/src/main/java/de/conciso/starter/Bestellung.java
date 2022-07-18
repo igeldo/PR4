@@ -15,13 +15,15 @@ public class Bestellung {
   @Id
   @GeneratedValue(strategy= GenerationType.AUTO)
   private int id;
-  //Produkt produkt;
-  int produktId;
+  @OneToOne
+  Produkt produkt;
+  //int produktId;
   int anzahl;
   Bestellstatus status;
 
-  public Bestellung(int produktId, int anzahl) {
-    this.produktId = produktId;
+  public Bestellung(Produkt produkt, int anzahl) {
+    //this.produktId = produktId;
+    this.produkt = produkt;
     this.anzahl = anzahl;
     this.status = Bestellstatus.WARTEN_AUF_ROHSTOFFE;
   }
