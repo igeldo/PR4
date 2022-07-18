@@ -4,46 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c882e35-cd72-4931-b43a-4778a82f3f94" name="Changes" comment="added remaining JGiven Tests in Person">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_tngtech_jgiven_jgiven_html5_report_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_tngtech_jgiven_jgiven_html_app_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_tngtech_jgiven_jgiven_junit_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_anim_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_awt_util_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_bridge_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_codec_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_constants_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_css_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_dom_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_ext_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_gvt_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_i18n_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_parser_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_script_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_shared_resources_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_svg_dom_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_svggen_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_transcoder_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_util_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_xml_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_xmlgraphics_commons_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_ext_1_3_04.xml" beforeDir="false" />
+    <list default="true" id="0c882e35-cd72-4931-b43a-4778a82f3f94" name="Changes" comment="resolved issue in ShopControllerTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auftrag/app/app (1) (de.conciso.auftrag).iml" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/app/app (1) (de.conciso.auftrag).iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auftrag/auftrag.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/auftrag.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auftrag/docker/docker (1) (de.conciso.auftrag).iml" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/docker/docker (1) (de.conciso.auftrag).iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auftrag/domain-api/domain-api (1) (de.conciso.auftrag).iml" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/domain-api/domain-api (1) (de.conciso.auftrag).iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auftrag/domain-core/domain-core (1) (de.conciso.auftrag).iml" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/domain-core/domain-core (1) (de.conciso.auftrag).iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auftrag/infrastructure/infrastructure (1) (de.conciso.auftrag).iml" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/infrastructure/infrastructure (1) (de.conciso.auftrag).iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auftrag/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auftrag/rest-api/rest-api (1) (de.conciso.auftrag).iml" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/rest-api/rest-api (1) (de.conciso.auftrag).iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/rest-api/src/test/java/de/conciso/shop/ShopControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/rest-api/src/test/java/de/conciso/shop/ShopControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/rest-api/target/rest-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/shop/rest-api/target/rest-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auftrag/rest-api/src/test/java/de/conciso/auftrag/AuftragControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/rest-api/src/test/java/de/conciso/auftrag/AuftragControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auftrag/rest-api/src/test/java/de/conciso/auftrag/steps/ThenOutcome.java" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/rest-api/src/test/java/de/conciso/auftrag/steps/ThenOutcome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auftrag/rest-api/target/rest-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/auftrag/rest-api/target/rest-api-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656265561583</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="resolved issue in ShopControllerTest">
+      <created>1656277412251</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656277412251</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +95,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added remaining JGiven Tests in Person" />
-    <option name="LAST_COMMIT_MESSAGE" value="added remaining JGiven Tests in Person" />
+    <MESSAGE value="resolved issue in ShopControllerTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="resolved issue in ShopControllerTest" />
   </component>
 </project>

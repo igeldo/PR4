@@ -59,14 +59,4 @@ public class ThenOutcome extends Stage<ThenOutcome>{
         return self();
     }
 
-    public ThenOutcome status_is_OK_findById(){
-        assertThat(result.getStatusCode()).isEqualTo(HttpStatus.OK);
-        return self();
-    }
-
-    public ThenOutcome body_is_correct_findById(){
-        assertThat(result.getBody()).isEqualTo(expectedAuftragRepresentation);
-        return self();
-    }
-
 }

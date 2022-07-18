@@ -32,8 +32,8 @@ class AuftragControllerTest extends ScenarioTest<GivenStatement, WhenAction, The
         when().creating_Controller()
                 .and().calling_findById(ID);
         then().auftraegeService_is_called_findById(ID)
-                .and().status_is_OK_findById()
-                .and().body_is_correct_findById();
+                .and().status_is_OK()
+                .and().body_is_correct();
     }
 
     @Test
