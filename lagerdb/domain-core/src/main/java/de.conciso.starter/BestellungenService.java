@@ -33,7 +33,7 @@ public class BestellungenService implements Bestellungen {
         ArrayList<Integer> rohstoffeID = new ArrayList<>();
         ArrayList<Integer> r_bedarf = new ArrayList<>();
         for (Zutat zutat : zutaten) {
-            rohstoffeID.add(zutat.getRohstoffId());
+            rohstoffeID.add(zutat.getRohstoff().getId());
             r_bedarf.add(zutat.getMenge() * anzahl);
         }
         // Schaue was vorhanden ist

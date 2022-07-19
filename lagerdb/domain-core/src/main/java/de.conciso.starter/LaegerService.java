@@ -46,7 +46,7 @@ public class LaegerService implements Laeger {
             lrDAO.save(new LR(lagerId, rohstoffId, menge));
         } else {
             logger.info("Relation does exist, updating");
-            found.setMenge(found.getMenge() + menge);
+            //found.setMenge(found.getMenge() + menge);
         }
     }
 }

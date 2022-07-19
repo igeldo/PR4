@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Data
-@Entity
+@Entity(name = "pr")
 @NoArgsConstructor
 @AllArgsConstructor
 public class Zutat  {

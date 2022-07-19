@@ -23,10 +23,6 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>de.conciso.starter</groupId>
-            <artifactId>domain-core</artifactId>
-        </dependency>
     </dependencies>
 
 </project>
