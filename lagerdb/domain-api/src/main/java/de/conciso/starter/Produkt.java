@@ -16,7 +16,8 @@ public class Produkt {
   private int id;
   String name;
   long preis;
-  //@ManyToMany(cascade = CascadeType.ALL)
+
+  @OneToMany(mappedBy = "produkt")
   Collection<Zutat> zutaten;
 
   public void addZutaten(Zutat zutat){
