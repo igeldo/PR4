@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
+
 @Data
 @Entity
 @NoArgsConstructor
@@ -15,12 +17,12 @@ public class Zutat  {
   PRID prid;
 
   @ManyToOne
-  @MapsId("produkt")
+  @MapsId("produktId")
   @JoinColumn(name = "produkt_id")
   Produkt produkt;
 
   @ManyToOne
-  @MapsId("rohstoff")
+  @MapsId("rohstoffId")
   @JoinColumn(name = "rohstoff_id")
   Rohstoff rohstoff;
 
