@@ -13,7 +13,10 @@ public class LaegerService implements Laeger {
 
     private final LagerDAO lagerDAO;
 
-    public LaegerService(LagerDAO lagerDAO) {
+    private final LRDAO lrDAO;
+
+    public LaegerService(LagerDAO lagerDAO, LRDAO lrDAO) {
+        this.lrDAO = lrDAO;
         this.lagerDAO = lagerDAO;
     }
 
@@ -36,6 +39,14 @@ public class LaegerService implements Laeger {
 
     @Override
     public void lagereEin(int lagerId, int rohstoffId, int menge){
-
+        logger.info("looking for relation: " + lagerId + " to " + rohstoffId);
+        var found = lrDAO.findById(lagerId, rohstoffId);
+        if (found.isEmpty()) {
+            logger.info("New relation created");
+            lrDAO.save(new LR(lagerId, rohstoffId, menge));
+        } else {
+            logger.info("Relation does exist, updating");
+            found.setMenge(found.getMenge() + menge);
+        }
     }
 }
