@@ -15,7 +15,6 @@ import java.util.Optional;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
-import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
@@ -75,7 +74,7 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
     protected static class GivenStatement extends Stage<GivenStatement> {
 
         @ProvidedScenarioState
-        Shop personen = mock(Shop.class);
+        Shop shop = mock(Shop.class);
 
         @ProvidedScenarioState
         Person person;
@@ -89,7 +88,7 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
                     .name(NAME)
                     .adresses(List.of())
                     .build();
-            BDDMockito.given(personen.createPerson(any(Person.class))).willReturn(person);
+            BDDMockito.given(shop.createPerson(any(Person.class))).willReturn(person);
             return self();
         }
 
@@ -102,7 +101,7 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
         }
 
         GivenStatement create_person_throws_exception(){
-            BDDMockito.given(personen.createPerson(any(Person.class))).willThrow(IllegalStateException.class);
+            BDDMockito.given(shop.createPerson(any(Person.class))).willThrow(IllegalStateException.class);
             return self();
         }
 
@@ -113,12 +112,12 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
                     .name(NAME)
                     .adresses(List.of())
                     .build();
-            BDDMockito.given(personen.findPerson(anyInt())).willReturn(Optional.of(person));
+            BDDMockito.given(shop.findPerson(anyInt())).willReturn(Optional.of(person));
             return self();
         }
 
         GivenStatement find_person_throws_exception(){
-            BDDMockito.given(personen.findPerson(anyInt())).willThrow(IllegalStateException.class);
+            BDDMockito.given(shop.findPerson(anyInt())).willThrow(IllegalStateException.class);
             return self();
         }
     }
@@ -128,7 +127,7 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
         @ProvidedScenarioState
         ResponseEntity<PersonRepresentation> result;
         @ExpectedScenarioState
-        Shop personen;
+        Shop shop;
 
         @ExpectedScenarioState
         PersonRepresentation personRepresentation;
@@ -136,7 +135,7 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
         ShopController cut;
 
         WhenAction creating_Controller(){
-            cut = new ShopController(personen);
+            cut = new ShopController(shop);
             return self();
         }
 

@@ -15,7 +15,6 @@ import java.util.Optional;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
-import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
@@ -30,8 +29,8 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
 
     @Test
     public void given_Person_can_be_created_when_calling_create(){
-        given().create_person_Representation()
-                .and().create_Person()
+        given().personRepresentation()
+                .and().person()
                 .and().person_can_be_created();
         when().creating_Controller()
                 .and().calling_create();
@@ -42,8 +41,8 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
 
     @Test
     public void given_create_person_throws_exception(){
-        given().create_person_Representation()
-                .and().create_Person()
+        given().personRepresentation()
+                .and().person()
                 .and().create_person_throws_exception();
         when().creating_Controller()
                 .and().calling_create();
@@ -54,8 +53,8 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
 
     @Test
     public void given_person_can_be_found(){
-        given().create_person_Representation()
-                .and().create_Person()
+        given().personRepresentation()
+                .and().person()
                 .and().person_can_be_found();
         when().creating_Controller()
                 .and().calling_findById();
@@ -66,8 +65,8 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
 
     @Test
     public void given_person_cannot_be_found(){
-        given().create_person_Representation()
-                .and().create_Person()
+        given().personRepresentation()
+                .and().person()
                 .and().person_cannot_be_found();
         when().creating_Controller()
                 .and().calling_findById();
@@ -78,8 +77,8 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
 
     @Test
     public void given_find_person_throws_exception(){
-        given().create_person_Representation()
-                .and().create_Person()
+        given().personRepresentation()
+                .and().person()
                 .and().find_person_throws_exception();
         when().creating_Controller()
                 .and().calling_findById();
@@ -90,8 +89,8 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
 
     @Test
     public void given_address_can_be_added_when_calling_addAddress(){
-        given().create_person_Representation()
-                .and().create_Person()
+        given().personRepresentation()
+                .and().person()
                 .and().address_can_be_added();
         when().creating_Controller()
                 .and().calling_addAddress();
@@ -156,12 +155,12 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
             return self();
         }
 
-        GivenStatement create_Person(){
+        GivenStatement person(){
             person = new Person(ID,VORNAME,NAME);
             return self();
         }
 
-        GivenStatement create_person_Representation(){
+        GivenStatement personRepresentation(){
             personRepresentation = PersonRepresentation.builder().id(ID).vorname(VORNAME).name(NAME).addresses(List.of()).build();
             return self();
         }

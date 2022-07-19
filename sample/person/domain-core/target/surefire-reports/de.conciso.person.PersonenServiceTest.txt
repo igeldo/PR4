@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: de.conciso.person.PersonenServiceTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.843 s - in de.conciso.person.PersonenServiceTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.902 s - in de.conciso.person.PersonenServiceTest

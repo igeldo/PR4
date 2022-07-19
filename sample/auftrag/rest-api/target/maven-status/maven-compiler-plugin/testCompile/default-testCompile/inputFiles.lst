@@ -1,5 +1,5 @@
-/home/timo/PR4/sample/auftrag/rest-api/src/test/java/de/conciso/auftrag/AuftragControllerTestMockito.java
 /home/timo/PR4/sample/auftrag/rest-api/src/test/java/de/conciso/auftrag/steps/GivenStatement.java
+/home/timo/PR4/sample/auftrag/rest-api/src/test/java/de/conciso/auftrag/AuftragControllerTest_old.java
 /home/timo/PR4/sample/auftrag/rest-api/src/test/java/de/conciso/auftrag/steps/WhenAction.java
 /home/timo/PR4/sample/auftrag/rest-api/src/test/java/de/conciso/auftrag/steps/ThenOutcome.java
 /home/timo/PR4/sample/auftrag/rest-api/src/test/java/de/conciso/auftrag/AuftragControllerTest.java

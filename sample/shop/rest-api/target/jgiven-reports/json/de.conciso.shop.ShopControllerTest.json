@@ -25,7 +25,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 13746882,
+              "durationInNanos": 14942129,
               "depth": 0,
               "parentFailed": false
             },
@@ -41,7 +41,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 773031,
+              "durationInNanos": 889490,
               "depth": 0,
               "parentFailed": false
             },
@@ -57,7 +57,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 481490,
+              "durationInNanos": 575247,
               "depth": 0,
               "parentFailed": false
             },
@@ -73,7 +73,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 13886556,
+              "durationInNanos": 20505453,
               "depth": 0,
               "parentFailed": false
             },
@@ -89,7 +89,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 5873901,
+              "durationInNanos": 6272118,
               "depth": 0,
               "parentFailed": false
             },
@@ -105,7 +105,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 46005609,
+              "durationInNanos": 71078397,
               "depth": 0,
               "parentFailed": false
             },
@@ -121,7 +121,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 693300,
+              "durationInNanos": 757702,
               "depth": 0,
               "parentFailed": false
             }
@@ -129,11 +129,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 105493395
+          "durationInNanos": 141062207
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 105493395
+      "durationInNanos": 141062207
     },
     {
       "className": "de.conciso.shop.ShopControllerTest",
@@ -158,7 +158,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 3782277,
+              "durationInNanos": 4849926,
               "depth": 0,
               "parentFailed": false
             },
@@ -174,7 +174,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 473364,
+              "durationInNanos": 412059,
               "depth": 0,
               "parentFailed": false
             },
@@ -190,7 +190,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 2035116,
+              "durationInNanos": 2266256,
               "depth": 0,
               "parentFailed": false
             },
@@ -206,7 +206,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 753755,
+              "durationInNanos": 790985,
               "depth": 0,
               "parentFailed": false
             },
@@ -222,7 +222,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 134154,
+              "durationInNanos": 729486,
               "depth": 0,
               "parentFailed": false
             },
@@ -238,7 +238,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 218954,
+              "durationInNanos": 412051,
               "depth": 0,
               "parentFailed": false
             }
@@ -246,11 +246,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 8450007
+          "durationInNanos": 10798939
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 8450007
+      "durationInNanos": 10798939
     },
     {
       "className": "de.conciso.shop.ShopControllerTest",
@@ -275,7 +275,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 626033,
+              "durationInNanos": 690916,
               "depth": 0,
               "parentFailed": false
             },
@@ -291,7 +291,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 247718,
+              "durationInNanos": 264540,
               "depth": 0,
               "parentFailed": false
             },
@@ -307,7 +307,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 812385,
+              "durationInNanos": 548186,
               "depth": 0,
               "parentFailed": false
             },
@@ -323,7 +323,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 867970,
+              "durationInNanos": 580076,
               "depth": 0,
               "parentFailed": false
             },
@@ -339,7 +339,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 387502,
+              "durationInNanos": 518460,
               "depth": 0,
               "parentFailed": false
             },
@@ -355,7 +355,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 179779,
+              "durationInNanos": 236476,
               "depth": 0,
               "parentFailed": false
             }
@@ -363,11 +363,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 4016422
+          "durationInNanos": 3642422
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 4016422
+      "durationInNanos": 3642422
     },
     {
       "className": "de.conciso.shop.ShopControllerTest",
@@ -392,7 +392,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 839276,
+              "durationInNanos": 818547,
               "depth": 0,
               "parentFailed": false
             },
@@ -408,7 +408,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 276081,
+              "durationInNanos": 283285,
               "depth": 0,
               "parentFailed": false
             },
@@ -424,7 +424,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 276222,
+              "durationInNanos": 293484,
               "depth": 0,
               "parentFailed": false
             },
@@ -440,7 +440,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 376131,
+              "durationInNanos": 400777,
               "depth": 0,
               "parentFailed": false
             },
@@ -456,7 +456,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 601868,
+              "durationInNanos": 635149,
               "depth": 0,
               "parentFailed": false
             },
@@ -472,7 +472,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 174309,
+              "durationInNanos": 227560,
               "depth": 0,
               "parentFailed": false
             },
@@ -488,7 +488,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 190199,
+              "durationInNanos": 293564,
               "depth": 0,
               "parentFailed": false
             }
@@ -496,11 +496,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 3696055
+          "durationInNanos": 3865792
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 3696055
+      "durationInNanos": 3865792
     }
   ],
   "tagMap": {}

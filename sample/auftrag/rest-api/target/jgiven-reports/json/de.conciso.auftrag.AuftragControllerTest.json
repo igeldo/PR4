@@ -39,7 +39,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 13214138,
+              "durationInNanos": 17227223,
               "depth": 0,
               "parentFailed": false
             },
@@ -69,7 +69,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 550118,
+              "durationInNanos": 731051,
               "depth": 0,
               "parentFailed": false
             },
@@ -85,7 +85,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 13848645,
+              "durationInNanos": 13597984,
               "depth": 0,
               "parentFailed": false
             },
@@ -101,7 +101,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 587358,
+              "durationInNanos": 488964,
               "depth": 0,
               "parentFailed": false
             },
@@ -124,7 +124,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 16093420,
+              "durationInNanos": 14960618,
               "depth": 0,
               "parentFailed": false
             },
@@ -147,7 +147,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 5172591,
+              "durationInNanos": 6280432,
               "depth": 0,
               "parentFailed": false
             },
@@ -163,7 +163,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 38857000,
+              "durationInNanos": 51356766,
               "depth": 0,
               "parentFailed": false
             },
@@ -179,7 +179,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 628015,
+              "durationInNanos": 889821,
               "depth": 0,
               "parentFailed": false
             }
@@ -187,11 +187,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 104072983
+          "durationInNanos": 130865030
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 104072983
+      "durationInNanos": 130865030
     },
     {
       "className": "de.conciso.auftrag.AuftragControllerTest",
@@ -230,7 +230,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 621093,
+              "durationInNanos": 800381,
               "depth": 0,
               "parentFailed": false
             },
@@ -260,7 +260,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 307841,
+              "durationInNanos": 480267,
               "depth": 0,
               "parentFailed": false
             },
@@ -276,7 +276,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 676647,
+              "durationInNanos": 1009386,
               "depth": 0,
               "parentFailed": false
             },
@@ -292,7 +292,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 274388,
+              "durationInNanos": 238250,
               "depth": 0,
               "parentFailed": false
             },
@@ -315,7 +315,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 1414048,
+              "durationInNanos": 1724447,
               "depth": 0,
               "parentFailed": false
             },
@@ -338,39 +338,39 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 1062936,
+              "durationInNanos": 900100,
               "depth": 0,
               "parentFailed": false
             },
             {
-              "name": "status is OK findById",
+              "name": "status is OK",
               "words": [
                 {
                   "value": "and",
                   "isIntroWord": true
                 },
                 {
-                  "value": "status is OK findById"
+                  "value": "status is OK"
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 309114,
+              "durationInNanos": 156456,
               "depth": 0,
               "parentFailed": false
             },
             {
-              "name": "body is correct findById",
+              "name": "body is correct",
               "words": [
                 {
                   "value": "and",
                   "isIntroWord": true
                 },
                 {
-                  "value": "body is correct findById"
+                  "value": "body is correct"
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 452905,
+              "durationInNanos": 318842,
               "depth": 0,
               "parentFailed": false
             }
@@ -378,11 +378,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 6131952
+          "durationInNanos": 6730292
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 6131952
+      "durationInNanos": 6730292
     },
     {
       "className": "de.conciso.auftrag.AuftragControllerTest",
@@ -421,7 +421,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 658032,
+              "durationInNanos": 613109,
               "depth": 0,
               "parentFailed": false
             },
@@ -451,7 +451,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 384336,
+              "durationInNanos": 431725,
               "depth": 0,
               "parentFailed": false
             },
@@ -467,7 +467,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 1171942,
+              "durationInNanos": 1244909,
               "depth": 0,
               "parentFailed": false
             },
@@ -483,7 +483,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 328571,
+              "durationInNanos": 283296,
               "depth": 0,
               "parentFailed": false
             },
@@ -499,7 +499,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 420484,
+              "durationInNanos": 390878,
               "depth": 0,
               "parentFailed": false
             },
@@ -515,7 +515,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 687788,
+              "durationInNanos": 622866,
               "depth": 0,
               "parentFailed": false
             },
@@ -531,7 +531,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 162808,
+              "durationInNanos": 130115,
               "depth": 0,
               "parentFailed": false
             },
@@ -547,7 +547,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 221839,
+              "durationInNanos": 137670,
               "depth": 0,
               "parentFailed": false
             }
@@ -555,11 +555,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 5074467
+          "durationInNanos": 4900686
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 5074467
+      "durationInNanos": 4900686
     }
   ],
   "tagMap": {}
