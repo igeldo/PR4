@@ -91,7 +91,8 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
     public void given_address_can_be_added_when_calling_addAddress(){
         given().personRepresentation()
                 .and().person()
-                .and().address_can_be_added();
+                .and().address_can_be_added()
+                .and().addressRepresentation();
         when().creating_Controller()
                 .and().calling_addAddress();
         then().personenservice_is_called_addAddress()
@@ -101,7 +102,8 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
 
     @Test
     public void given_address_cannot_be_added(){
-        given().address_cannot_be_added();
+        given().address_cannot_be_added()
+                .and().addressRepresentation();
         when().creating_Controller()
                 .and().calling_addAddress();
         then().personenservice_is_called_addAddress()
@@ -111,7 +113,8 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
 
     @Test
     public void given_addAddress_throws_exception(){
-        given().addAddress_throws_exception();
+        given().addAddress_throws_exception()
+                .and().addressRepresentation();
         when().creating_Controller()
                 .and().calling_addAddress();
         then().personenservice_is_called_addAddress()
@@ -129,6 +132,9 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
 
         @ProvidedScenarioState
         PersonRepresentation personRepresentation;
+
+        @ProvidedScenarioState
+        AddressRepresentation addressRepresentation;
 
         GivenStatement person_can_be_created(){
             BDDMockito.given(personen.create(any(Person.class))).willReturn(new Person(ID, VORNAME, NAME));
@@ -166,6 +172,10 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
         }
 
 
+        GivenStatement addressRepresentation(){
+            addressRepresentation = AddressRepresentation.builder().strasse(STRASSE).plz(PLZ).ort(ORT).build();
+            return self();
+        }
 
         GivenStatement address_can_be_added(){
             BDDMockito.given(personen.addAddress(anyInt(), any(Address.class))).willReturn(Optional.of(person));
@@ -192,16 +202,17 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
         ResponseEntity<PersonRepresentation> result;
         PersonController cut;
 
+        @ExpectedScenarioState
+        PersonRepresentation personRepresentation;
+
+        @ExpectedScenarioState
+        AddressRepresentation addressRepresentation;
+
         WhenAction creating_Controller(){
             cut = new PersonController(personen);
             return self();
         }
         WhenAction calling_create(){
-            var personRepresentation = PersonRepresentation.builder()
-                    .name(NAME)
-                    .vorname(VORNAME)
-                    .addresses(List.of())
-                    .build();
             result = cut.create(personRepresentation);
             return self();
         }
@@ -212,11 +223,6 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
         }
 
         WhenAction calling_addAddress(){
-            var addressRepresentation = AddressRepresentation.builder()
-                    .strasse(STRASSE)
-                    .plz(PLZ)
-                    .ort(ORT)
-                    .build();
             result = cut.addAddress(ID, addressRepresentation);
             return self();
         }
