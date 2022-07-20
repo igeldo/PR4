@@ -4,25 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c882e35-cd72-4931-b43a-4778a82f3f94" name="Changes" comment="renamed methods and objects in PersonenControllerTest and ShopControllerTest">
+    <list default="true" id="0c882e35-cd72-4931-b43a-4778a82f3f94" name="Changes" comment="added addressRepresentation to given stage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/app/target/app-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/person/app/target/app-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/app/target/app-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/person/app/target/app-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/docker/target/docker-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/person/docker/target/docker-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/domain-api/target/domain-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/person/domain-api/target/domain-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/domain-core/target/domain-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/person/domain-core/target/domain-core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/domain-core/target/surefire-reports/TEST-de.conciso.person.PersonenServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/person/domain-core/target/surefire-reports/TEST-de.conciso.person.PersonenServiceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/domain-core/target/surefire-reports/de.conciso.person.PersonenServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/person/domain-core/target/surefire-reports/de.conciso.person.PersonenServiceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/infrastructure/target/infrastructure-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/person/infrastructure/target/infrastructure-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/rest-api/src/test/java/de/conciso/person/PersonControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/person/rest-api/src/test/java/de/conciso/person/PersonControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/rest-api/target/jgiven-reports/json/de.conciso.person.PersonControllerTest.json" beforeDir="false" afterPath="$PROJECT_DIR$/person/rest-api/target/jgiven-reports/json/de.conciso.person.PersonControllerTest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/rest-api/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/rest-api/target/rest-api-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/rest-api/target/surefire-reports/TEST-de.conciso.person.PersonControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/person/rest-api/target/surefire-reports/TEST-de.conciso.person.PersonControllerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/rest-api/target/surefire-reports/de.conciso.person.PersonControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/person/rest-api/target/surefire-reports/de.conciso.person.PersonControllerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest$GivenStatement.class" beforeDir="false" afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest$GivenStatement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest$ThenOutcome.class" beforeDir="false" afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest$ThenOutcome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest$WhenAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/person/rest-api/target/test-classes/de/conciso/person/PersonControllerTest$WhenAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/app/target/app-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/shop/app/target/app-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/app/target/app-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/shop/app/target/app-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/docker/target/docker-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/shop/docker/target/docker-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/domain-api/target/domain-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/shop/domain-api/target/domain-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/domain-core/target/domain-core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/shop/domain-core/target/domain-core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/infrastructure/target/infrastructure-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/shop/infrastructure/target/infrastructure-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/rest-api/src/test/java/de/conciso/shop/ShopControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/rest-api/src/test/java/de/conciso/shop/ShopControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/rest-api/target/jgiven-reports/json/de.conciso.shop.ShopControllerTest.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop/rest-api/target/jgiven-reports/json/de.conciso.shop.ShopControllerTest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/rest-api/target/rest-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/shop/rest-api/target/rest-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/rest-api/target/surefire-reports/TEST-de.conciso.shop.ShopControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop/rest-api/target/surefire-reports/TEST-de.conciso.shop.ShopControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/rest-api/target/surefire-reports/de.conciso.shop.ShopControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/shop/rest-api/target/surefire-reports/de.conciso.shop.ShopControllerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest$GivenStatement.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest$GivenStatement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest$ThenOutcome.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest$ThenOutcome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest$WhenAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest$WhenAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/rest-api/target/test-classes/de/conciso/shop/ShopControllerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658235539540</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added addressRepresentation to given stage">
+      <created>1658236574045</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658236574045</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,6 +138,7 @@
     <MESSAGE value="resolved issue in ShopControllerTest" />
     <MESSAGE value="removed duplicate methods in ThenOutcome (Auftrag)" />
     <MESSAGE value="renamed methods and objects in PersonenControllerTest and ShopControllerTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed methods and objects in PersonenControllerTest and ShopControllerTest" />
+    <MESSAGE value="added addressRepresentation to given stage" />
+    <option name="LAST_COMMIT_MESSAGE" value="added addressRepresentation to given stage" />
   </component>
 </project>

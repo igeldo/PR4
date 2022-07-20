@@ -30,8 +30,9 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
 
     @Test
     public void given_Person_can_be_created_when_calling_create(){
-        given().person_can_be_created()
-                .and().personRepresentation();
+        given().personRepresentation()
+                .and().person()
+                .and().person_can_be_created();
         when().creating_Controller()
                 .and().calling_create();
         then().personenService_is_called()
@@ -41,8 +42,9 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
 
     @Test
     public void given_create_Person_throws_exception(){
-        given().create_person_throws_exception()
-                .and().personRepresentation();
+        given().personRepresentation()
+                .and().person()
+                .and().create_person_throws_exception();
         when().creating_Controller()
                 .and().calling_create();
         then().personenService_is_called()
@@ -52,7 +54,8 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
 
     @Test
     public void given_Person_can_be_found_when_calling_findById(){
-        given().person_can_be_found();
+        given().person()
+                .and().person_can_be_found();
         when().creating_Controller()
                 .and().calling_find_person();
         then().personenservice_is_called()
@@ -82,13 +85,12 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
         @ProvidedScenarioState
         PersonRepresentation personRepresentation;
         GivenStatement person_can_be_created(){
-            person = Person.builder()
-                    .id(ID)
-                    .vorname(VORNAME)
-                    .name(NAME)
-                    .adresses(List.of())
-                    .build();
             BDDMockito.given(shop.createPerson(any(Person.class))).willReturn(person);
+            return self();
+        }
+
+        GivenStatement person(){
+            person = Person.builder().id(ID).vorname(VORNAME).name(NAME).adresses(List.of()).build();
             return self();
         }
 
@@ -106,12 +108,6 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
         }
 
         GivenStatement person_can_be_found(){
-            var person = Person.builder()
-                    .id(ID)
-                    .vorname(VORNAME)
-                    .name(NAME)
-                    .adresses(List.of())
-                    .build();
             BDDMockito.given(shop.findPerson(anyInt())).willReturn(Optional.of(person));
             return self();
         }
@@ -154,7 +150,7 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
     protected static class ThenOutcome extends Stage<ThenOutcome>{
 
         @ExpectedScenarioState
-        Shop personen;
+        Shop shop;
 
         @ExpectedScenarioState
         ResponseEntity<PersonRepresentation> result;
@@ -167,7 +163,7 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
                     .vorname(VORNAME)
                     .name(NAME)
                     .build();
-            verify(personen).createPerson(person);
+            verify(shop).createPerson(person);
             return self();
         }
 
@@ -198,7 +194,7 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
         }
 
         ThenOutcome personenservice_is_called(){
-            verify(personen).findPerson(ID);
+            verify(shop).findPerson(ID);
             return self();
         }
 

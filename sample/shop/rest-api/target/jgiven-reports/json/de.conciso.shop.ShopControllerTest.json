@@ -14,26 +14,10 @@
           "caseNr": 1,
           "steps": [
             {
-              "name": "create person throws exception",
-              "words": [
-                {
-                  "value": "Given",
-                  "isIntroWord": true
-                },
-                {
-                  "value": "create person throws exception"
-                }
-              ],
-              "status": "PASSED",
-              "durationInNanos": 14942129,
-              "depth": 0,
-              "parentFailed": false
-            },
-            {
               "name": "person representation",
               "words": [
                 {
-                  "value": "and",
+                  "value": "Given",
                   "isIntroWord": true
                 },
                 {
@@ -41,7 +25,39 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 889490,
+              "durationInNanos": 15385603,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "person",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "person"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 591750,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "create person throws exception",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create person throws exception"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 13854284,
               "depth": 0,
               "parentFailed": false
             },
@@ -57,7 +73,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 575247,
+              "durationInNanos": 680056,
               "depth": 0,
               "parentFailed": false
             },
@@ -73,7 +89,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 20505453,
+              "durationInNanos": 59833596,
               "depth": 0,
               "parentFailed": false
             },
@@ -89,7 +105,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 6272118,
+              "durationInNanos": 11005654,
               "depth": 0,
               "parentFailed": false
             },
@@ -105,7 +121,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 71078397,
+              "durationInNanos": 67284066,
               "depth": 0,
               "parentFailed": false
             },
@@ -121,7 +137,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 757702,
+              "durationInNanos": 816984,
               "depth": 0,
               "parentFailed": false
             }
@@ -129,11 +145,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 141062207
+          "durationInNanos": 193297871
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 141062207
+      "durationInNanos": 193297871
     },
     {
       "className": "de.conciso.shop.ShopControllerTest",
@@ -147,10 +163,26 @@
           "caseNr": 1,
           "steps": [
             {
-              "name": "person can be found",
+              "name": "person",
               "words": [
                 {
                   "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "person"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 188546,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "person can be found",
+              "words": [
+                {
+                  "value": "and",
                   "isIntroWord": true
                 },
                 {
@@ -158,7 +190,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 4849926,
+              "durationInNanos": 3130419,
               "depth": 0,
               "parentFailed": false
             },
@@ -174,7 +206,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 412059,
+              "durationInNanos": 538037,
               "depth": 0,
               "parentFailed": false
             },
@@ -190,7 +222,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 2266256,
+              "durationInNanos": 2739797,
               "depth": 0,
               "parentFailed": false
             },
@@ -206,7 +238,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 790985,
+              "durationInNanos": 736503,
               "depth": 0,
               "parentFailed": false
             },
@@ -222,7 +254,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 729486,
+              "durationInNanos": 210277,
               "depth": 0,
               "parentFailed": false
             },
@@ -238,7 +270,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 412051,
+              "durationInNanos": 238321,
               "depth": 0,
               "parentFailed": false
             }
@@ -246,11 +278,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 10798939
+          "durationInNanos": 8903505
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 10798939
+      "durationInNanos": 8903505
     },
     {
       "className": "de.conciso.shop.ShopControllerTest",
@@ -275,7 +307,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 690916,
+              "durationInNanos": 889155,
               "depth": 0,
               "parentFailed": false
             },
@@ -291,7 +323,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 264540,
+              "durationInNanos": 308554,
               "depth": 0,
               "parentFailed": false
             },
@@ -307,7 +339,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 548186,
+              "durationInNanos": 726264,
               "depth": 0,
               "parentFailed": false
             },
@@ -323,7 +355,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 580076,
+              "durationInNanos": 732044,
               "depth": 0,
               "parentFailed": false
             },
@@ -339,7 +371,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 518460,
+              "durationInNanos": 452355,
               "depth": 0,
               "parentFailed": false
             },
@@ -355,7 +387,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 236476,
+              "durationInNanos": 170903,
               "depth": 0,
               "parentFailed": false
             }
@@ -363,11 +395,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 3642422
+          "durationInNanos": 4175892
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 3642422
+      "durationInNanos": 4175892
     },
     {
       "className": "de.conciso.shop.ShopControllerTest",
@@ -381,26 +413,10 @@
           "caseNr": 1,
           "steps": [
             {
-              "name": "person can be created",
-              "words": [
-                {
-                  "value": "Given",
-                  "isIntroWord": true
-                },
-                {
-                  "value": "person can be created"
-                }
-              ],
-              "status": "PASSED",
-              "durationInNanos": 818547,
-              "depth": 0,
-              "parentFailed": false
-            },
-            {
               "name": "person representation",
               "words": [
                 {
-                  "value": "and",
+                  "value": "Given",
                   "isIntroWord": true
                 },
                 {
@@ -408,7 +424,39 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 283285,
+              "durationInNanos": 324174,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "person",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "person"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 108064,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "person can be created",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "person can be created"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 844748,
               "depth": 0,
               "parentFailed": false
             },
@@ -424,7 +472,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 293484,
+              "durationInNanos": 313493,
               "depth": 0,
               "parentFailed": false
             },
@@ -440,7 +488,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 400777,
+              "durationInNanos": 371061,
               "depth": 0,
               "parentFailed": false
             },
@@ -456,7 +504,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 635149,
+              "durationInNanos": 754106,
               "depth": 0,
               "parentFailed": false
             },
@@ -472,7 +520,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 227560,
+              "durationInNanos": 259741,
               "depth": 0,
               "parentFailed": false
             },
@@ -488,7 +536,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 293564,
+              "durationInNanos": 302552,
               "depth": 0,
               "parentFailed": false
             }
@@ -496,11 +544,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 3865792
+          "durationInNanos": 4208739
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 3865792
+      "durationInNanos": 4208739
     }
   ],
   "tagMap": {}
