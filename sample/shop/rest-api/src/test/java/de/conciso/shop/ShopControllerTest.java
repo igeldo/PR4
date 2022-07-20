@@ -65,8 +65,7 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
 
     @Test
     public void given_Person_cannot_be_found() {
-        given().person()
-                .and().person_cannot_be_found();
+        given().person_cannot_be_found();
         when().creating_Controller()
                 .and().calling_find_person();
         then().personenservice_is_called()
