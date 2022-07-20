@@ -25,7 +25,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 15385603,
+              "durationInNanos": 11604927,
               "depth": 0,
               "parentFailed": false
             },
@@ -41,7 +41,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 591750,
+              "durationInNanos": 416168,
               "depth": 0,
               "parentFailed": false
             },
@@ -57,7 +57,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 13854284,
+              "durationInNanos": 15835658,
               "depth": 0,
               "parentFailed": false
             },
@@ -73,7 +73,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 680056,
+              "durationInNanos": 1051383,
               "depth": 0,
               "parentFailed": false
             },
@@ -89,7 +89,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 59833596,
+              "durationInNanos": 34964380,
               "depth": 0,
               "parentFailed": false
             },
@@ -105,7 +105,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 11005654,
+              "durationInNanos": 8558572,
               "depth": 0,
               "parentFailed": false
             },
@@ -121,7 +121,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 67284066,
+              "durationInNanos": 69572170,
               "depth": 0,
               "parentFailed": false
             },
@@ -137,7 +137,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 816984,
+              "durationInNanos": 1002126,
               "depth": 0,
               "parentFailed": false
             }
@@ -145,144 +145,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 193297871
+          "durationInNanos": 165540704
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 193297871
-    },
-    {
-      "className": "de.conciso.shop.ShopControllerTest",
-      "testMethodName": "given_Person_can_be_found_when_calling_findById",
-      "description": "given Person can be found when calling findById",
-      "tagIds": [],
-      "explicitParameters": [],
-      "derivedParameters": [],
-      "scenarioCases": [
-        {
-          "caseNr": 1,
-          "steps": [
-            {
-              "name": "person",
-              "words": [
-                {
-                  "value": "Given",
-                  "isIntroWord": true
-                },
-                {
-                  "value": "person"
-                }
-              ],
-              "status": "PASSED",
-              "durationInNanos": 188546,
-              "depth": 0,
-              "parentFailed": false
-            },
-            {
-              "name": "person can be found",
-              "words": [
-                {
-                  "value": "and",
-                  "isIntroWord": true
-                },
-                {
-                  "value": "person can be found"
-                }
-              ],
-              "status": "PASSED",
-              "durationInNanos": 3130419,
-              "depth": 0,
-              "parentFailed": false
-            },
-            {
-              "name": "creating Controller",
-              "words": [
-                {
-                  "value": "When",
-                  "isIntroWord": true
-                },
-                {
-                  "value": "creating Controller"
-                }
-              ],
-              "status": "PASSED",
-              "durationInNanos": 538037,
-              "depth": 0,
-              "parentFailed": false
-            },
-            {
-              "name": "calling find person",
-              "words": [
-                {
-                  "value": "and",
-                  "isIntroWord": true
-                },
-                {
-                  "value": "calling find person"
-                }
-              ],
-              "status": "PASSED",
-              "durationInNanos": 2739797,
-              "depth": 0,
-              "parentFailed": false
-            },
-            {
-              "name": "personenservice is called",
-              "words": [
-                {
-                  "value": "Then",
-                  "isIntroWord": true
-                },
-                {
-                  "value": "personenservice is called"
-                }
-              ],
-              "status": "PASSED",
-              "durationInNanos": 736503,
-              "depth": 0,
-              "parentFailed": false
-            },
-            {
-              "name": "status is ok",
-              "words": [
-                {
-                  "value": "and",
-                  "isIntroWord": true
-                },
-                {
-                  "value": "status is ok"
-                }
-              ],
-              "status": "PASSED",
-              "durationInNanos": 210277,
-              "depth": 0,
-              "parentFailed": false
-            },
-            {
-              "name": "body is correct",
-              "words": [
-                {
-                  "value": "and",
-                  "isIntroWord": true
-                },
-                {
-                  "value": "body is correct"
-                }
-              ],
-              "status": "PASSED",
-              "durationInNanos": 238321,
-              "depth": 0,
-              "parentFailed": false
-            }
-          ],
-          "explicitArguments": [],
-          "derivedArguments": [],
-          "status": "SUCCESS",
-          "durationInNanos": 8903505
-        }
-      ],
-      "casesAsTable": false,
-      "durationInNanos": 8903505
+      "durationInNanos": 165540704
     },
     {
       "className": "de.conciso.shop.ShopControllerTest",
@@ -307,7 +174,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 889155,
+              "durationInNanos": 1353751,
               "depth": 0,
               "parentFailed": false
             },
@@ -323,7 +190,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 308554,
+              "durationInNanos": 344819,
               "depth": 0,
               "parentFailed": false
             },
@@ -339,7 +206,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 726264,
+              "durationInNanos": 650655,
               "depth": 0,
               "parentFailed": false
             },
@@ -355,7 +222,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 732044,
+              "durationInNanos": 775477,
               "depth": 0,
               "parentFailed": false
             },
@@ -371,7 +238,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 452355,
+              "durationInNanos": 480084,
               "depth": 0,
               "parentFailed": false
             },
@@ -387,7 +254,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 170903,
+              "durationInNanos": 227000,
               "depth": 0,
               "parentFailed": false
             }
@@ -395,11 +262,11 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 4175892
+          "durationInNanos": 4811348
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 4175892
+      "durationInNanos": 4811348
     },
     {
       "className": "de.conciso.shop.ShopControllerTest",
@@ -424,7 +291,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 324174,
+              "durationInNanos": 298675,
               "depth": 0,
               "parentFailed": false
             },
@@ -440,7 +307,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 108064,
+              "durationInNanos": 119055,
               "depth": 0,
               "parentFailed": false
             },
@@ -456,7 +323,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 844748,
+              "durationInNanos": 2662588,
               "depth": 0,
               "parentFailed": false
             },
@@ -472,7 +339,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 313493,
+              "durationInNanos": 406860,
               "depth": 0,
               "parentFailed": false
             },
@@ -488,7 +355,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 371061,
+              "durationInNanos": 2088331,
               "depth": 0,
               "parentFailed": false
             },
@@ -504,7 +371,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 754106,
+              "durationInNanos": 691718,
               "depth": 0,
               "parentFailed": false
             },
@@ -520,7 +387,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 259741,
+              "durationInNanos": 164992,
               "depth": 0,
               "parentFailed": false
             },
@@ -536,7 +403,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 302552,
+              "durationInNanos": 245104,
               "depth": 0,
               "parentFailed": false
             }
@@ -544,11 +411,277 @@
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 4208739
+          "durationInNanos": 7856925
         }
       ],
       "casesAsTable": false,
-      "durationInNanos": 4208739
+      "durationInNanos": 7856925
+    },
+    {
+      "className": "de.conciso.shop.ShopControllerTest",
+      "testMethodName": "given_Person_cannot_be_found",
+      "description": "given Person cannot be found",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "person",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "person"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 186753,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "person cannot be found",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "person cannot be found"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 834148,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 251786,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling find person",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling find person"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 1190592,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "personenservice is called",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "personenservice is called"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 596007,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is NOT FOUND",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is NOT FOUND"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 171555,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is empty",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is empty"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 110629,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 4453596
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 4453596
+    },
+    {
+      "className": "de.conciso.shop.ShopControllerTest",
+      "testMethodName": "given_Person_can_be_found",
+      "description": "given Person can be found",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "person",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "person"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 84259,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "person can be found",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "person can be found"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 631684,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 127201,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling find person",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling find person"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 440484,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "personenservice is called",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "personenservice is called"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 528149,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is ok",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is ok"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 128072,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is correct",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is correct"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 137611,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 2983374
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 2983374
     }
   ],
   "tagMap": {}

@@ -53,7 +53,7 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
     }
 
     @Test
-    public void given_Person_can_be_found_when_calling_findById() {
+    public void given_Person_can_be_found() {
         given().person()
                 .and().person_can_be_found();
         when().creating_Controller()
@@ -61,6 +61,17 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
         then().personenservice_is_called()
                 .and().status_is_ok()
                 .and().body_is_correct();
+    }
+
+    @Test
+    public void given_Person_cannot_be_found() {
+        given().person()
+                .and().person_cannot_be_found();
+        when().creating_Controller()
+                .and().calling_find_person();
+        then().personenservice_is_called()
+                .and().status_is_NOT_FOUND()
+                .and().body_is_empty();
     }
 
     @Test
@@ -110,6 +121,11 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
 
         GivenStatement person_can_be_found() {
             BDDMockito.given(shop.findPerson(anyInt())).willReturn(Optional.of(person));
+            return self();
+        }
+
+        GivenStatement person_cannot_be_found() {
+            BDDMockito.given(shop.findPerson(anyInt())).willReturn(Optional.empty());
             return self();
         }
 
@@ -186,6 +202,11 @@ public class ShopControllerTest extends ScenarioTest<ShopControllerTest.GivenSta
 
         ThenOutcome status_is_INTERNAL_SERVER_ERROR() {
             assertThat(result.getStatusCode()).isEqualTo(HttpStatus.INTERNAL_SERVER_ERROR);
+            return self();
+        }
+
+        ThenOutcome status_is_NOT_FOUND() {
+            assertThat(result.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
             return self();
         }
 
