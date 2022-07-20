@@ -13,7 +13,7 @@ import org.springframework.http.ResponseEntity;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.verify;
 
-public class ThenOutcome extends Stage<ThenOutcome>{
+public class ThenOutcome extends Stage<ThenOutcome> {
 
     @ExpectedScenarioState
     Auftraege auftraege;
@@ -28,33 +28,32 @@ public class ThenOutcome extends Stage<ThenOutcome>{
     AuftragRepresentation expectedAuftragRepresentation;
 
 
-
-    public ThenOutcome auftraegeService_is_called(){
+    public ThenOutcome auftraegeService_is_called() {
         verify(auftraege).create(testAuftrag);
         return self();
     }
 
-    public ThenOutcome status_is_OK(){
+    public ThenOutcome status_is_OK() {
         assertThat(result.getStatusCode()).isEqualTo(HttpStatus.OK);
         return self();
     }
 
-    public ThenOutcome status_is_NOT_FOUND(){
+    public ThenOutcome status_is_NOT_FOUND() {
         assertThat(result.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
         return self();
     }
 
-    public ThenOutcome body_is_correct(){
+    public ThenOutcome body_is_correct() {
         assertThat(result.getBody()).isEqualTo(expectedAuftragRepresentation);
         return self();
     }
 
-    public ThenOutcome body_is_empty(){
+    public ThenOutcome body_is_empty() {
         assertThat(result.hasBody()).isFalse();
         return self();
     }
 
-    public ThenOutcome auftraegeService_is_called_findById(int id){
+    public ThenOutcome auftraegeService_is_called_findById(int id) {
         verify(auftraege).findById(id);
         return self();
     }

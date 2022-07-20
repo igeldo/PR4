@@ -18,7 +18,7 @@ import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-public class PersonControllerTest extends ScenarioTest<PersonControllerTest.GivenStatement, PersonControllerTest.WhenAction, PersonControllerTest.ThenOutcome>{
+public class PersonControllerTest extends ScenarioTest<PersonControllerTest.GivenStatement, PersonControllerTest.WhenAction, PersonControllerTest.ThenOutcome> {
 
     private static final int ID = 42;
     private static final String VORNAME = "someVorname";
@@ -28,7 +28,7 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
     private static final String ORT = "someOrt";
 
     @Test
-    public void given_Person_can_be_created_when_calling_create(){
+    public void given_Person_can_be_created_when_calling_create() {
         given().personRepresentation()
                 .and().person()
                 .and().person_can_be_created();
@@ -40,7 +40,7 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
     }
 
     @Test
-    public void given_create_person_throws_exception(){
+    public void given_create_person_throws_exception() {
         given().personRepresentation()
                 .and().person()
                 .and().create_person_throws_exception();
@@ -52,7 +52,7 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
     }
 
     @Test
-    public void given_person_can_be_found(){
+    public void given_person_can_be_found() {
         given().personRepresentation()
                 .and().person()
                 .and().person_can_be_found();
@@ -64,7 +64,7 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
     }
 
     @Test
-    public void given_person_cannot_be_found(){
+    public void given_person_cannot_be_found() {
         given().personRepresentation()
                 .and().person()
                 .and().person_cannot_be_found();
@@ -76,7 +76,7 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
     }
 
     @Test
-    public void given_find_person_throws_exception(){
+    public void given_find_person_throws_exception() {
         given().personRepresentation()
                 .and().person()
                 .and().find_person_throws_exception();
@@ -88,7 +88,7 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
     }
 
     @Test
-    public void given_address_can_be_added_when_calling_addAddress(){
+    public void given_address_can_be_added_when_calling_addAddress() {
         given().personRepresentation()
                 .and().person()
                 .and().address_can_be_added()
@@ -101,7 +101,7 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
     }
 
     @Test
-    public void given_address_cannot_be_added(){
+    public void given_address_cannot_be_added() {
         given().address_cannot_be_added()
                 .and().addressRepresentation();
         when().creating_Controller()
@@ -112,7 +112,7 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
     }
 
     @Test
-    public void given_addAddress_throws_exception(){
+    public void given_addAddress_throws_exception() {
         given().addAddress_throws_exception()
                 .and().addressRepresentation();
         when().creating_Controller()
@@ -122,7 +122,7 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
                 .and().body_is_empty();
     }
 
-    protected static class GivenStatement extends Stage<GivenStatement>{
+    protected static class GivenStatement extends Stage<GivenStatement> {
 
         @ProvidedScenarioState
         Personen personen = mock(Personen.class);
@@ -136,65 +136,65 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
         @ProvidedScenarioState
         AddressRepresentation addressRepresentation;
 
-        GivenStatement person_can_be_created(){
+        GivenStatement person_can_be_created() {
             BDDMockito.given(personen.create(any(Person.class))).willReturn(new Person(ID, VORNAME, NAME));
             return self();
         }
 
-        GivenStatement create_person_throws_exception(){
+        GivenStatement create_person_throws_exception() {
             BDDMockito.given(personen.create(any(Person.class))).willThrow(IllegalStateException.class);
             return self();
         }
 
-        GivenStatement person_can_be_found(){
+        GivenStatement person_can_be_found() {
             BDDMockito.given(personen.findById(anyInt())).willReturn(Optional.of(new Person(ID, VORNAME, NAME)));
             return self();
         }
 
-        GivenStatement person_cannot_be_found(){
+        GivenStatement person_cannot_be_found() {
             BDDMockito.given(personen.findById(anyInt())).willReturn(Optional.empty());
             return self();
         }
 
-        GivenStatement find_person_throws_exception(){
+        GivenStatement find_person_throws_exception() {
             BDDMockito.given(personen.findById(anyInt())).willThrow(IllegalStateException.class);
             return self();
         }
 
-        GivenStatement person(){
-            person = new Person(ID,VORNAME,NAME);
+        GivenStatement person() {
+            person = new Person(ID, VORNAME, NAME);
             return self();
         }
 
-        GivenStatement personRepresentation(){
+        GivenStatement personRepresentation() {
             personRepresentation = PersonRepresentation.builder().id(ID).vorname(VORNAME).name(NAME).addresses(List.of()).build();
             return self();
         }
 
 
-        GivenStatement addressRepresentation(){
+        GivenStatement addressRepresentation() {
             addressRepresentation = AddressRepresentation.builder().strasse(STRASSE).plz(PLZ).ort(ORT).build();
             return self();
         }
 
-        GivenStatement address_can_be_added(){
+        GivenStatement address_can_be_added() {
             BDDMockito.given(personen.addAddress(anyInt(), any(Address.class))).willReturn(Optional.of(person));
             return self();
         }
 
-        GivenStatement address_cannot_be_added(){
+        GivenStatement address_cannot_be_added() {
             BDDMockito.given(personen.addAddress(anyInt(), any(Address.class))).willReturn(Optional.empty());
             return self();
         }
 
-        GivenStatement addAddress_throws_exception(){
+        GivenStatement addAddress_throws_exception() {
             BDDMockito.given(personen.addAddress(anyInt(), any(Address.class))).willThrow(IllegalStateException.class);
             return self();
         }
 
     }
 
-    protected static class WhenAction extends Stage<WhenAction>{
+    protected static class WhenAction extends Stage<WhenAction> {
 
         @ExpectedScenarioState
         Personen personen;
@@ -208,28 +208,29 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
         @ExpectedScenarioState
         AddressRepresentation addressRepresentation;
 
-        WhenAction creating_Controller(){
+        WhenAction creating_Controller() {
             cut = new PersonController(personen);
             return self();
         }
-        WhenAction calling_create(){
+
+        WhenAction calling_create() {
             result = cut.create(personRepresentation);
             return self();
         }
 
-        WhenAction calling_findById(){
+        WhenAction calling_findById() {
             result = cut.findById(ID);
             return self();
         }
 
-        WhenAction calling_addAddress(){
+        WhenAction calling_addAddress() {
             result = cut.addAddress(ID, addressRepresentation);
             return self();
         }
 
     }
 
-    protected static class ThenOutcome extends Stage<ThenOutcome>{
+    protected static class ThenOutcome extends Stage<ThenOutcome> {
 
         @ExpectedScenarioState
         Personen personen;
@@ -237,7 +238,7 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
         @ExpectedScenarioState
         ResponseEntity<PersonRepresentation> result;
 
-        ThenOutcome personenService_is_called(){
+        ThenOutcome personenService_is_called() {
             verify(personen).create(new Person(VORNAME, NAME));
             return self();
         }
@@ -252,7 +253,7 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
             return self();
         }
 
-        ThenOutcome status_is_INTERNAL_SERVER_ERROR(){
+        ThenOutcome status_is_INTERNAL_SERVER_ERROR() {
             assertThat(result.getStatusCode()).isEqualTo(HttpStatus.INTERNAL_SERVER_ERROR);
             return self();
         }
@@ -279,8 +280,7 @@ public class PersonControllerTest extends ScenarioTest<PersonControllerTest.Give
         }
 
 
-
-        ThenOutcome personenservice_is_called_addAddress(){
+        ThenOutcome personenservice_is_called_addAddress() {
             verify(personen).addAddress(ID, new Address(STRASSE, PLZ, ORT));
             return self();
         }

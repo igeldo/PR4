@@ -7,7 +7,7 @@ import de.conciso.auftrag.steps.ThenOutcome;
 import de.conciso.auftrag.steps.WhenAction;
 import org.junit.jupiter.api.Test;
 
-class AuftragControllerTest extends ScenarioTest<GivenStatement, WhenAction, ThenOutcome>{
+class AuftragControllerTest extends ScenarioTest<GivenStatement, WhenAction, ThenOutcome> {
 
     static final String BESTELL_NUMMER = "69420";
     static final int ID = 42;
@@ -15,7 +15,7 @@ class AuftragControllerTest extends ScenarioTest<GivenStatement, WhenAction, The
     @Test
     public void given_Auftrag_can_be_created_when_calling_create() {
         given().auftragRepresentation(ID, BESTELL_NUMMER)
-                .and().auftrag(ID,BESTELL_NUMMER)
+                .and().auftrag(ID, BESTELL_NUMMER)
                 .and().auftrag_can_be_created();
         when().creating_Controller()
                 .and().calling_create();
@@ -25,9 +25,9 @@ class AuftragControllerTest extends ScenarioTest<GivenStatement, WhenAction, The
     }
 
     @Test
-    public void given_Auftrag_can_be_found_when_calling_findById(){
-        given().auftragRepresentation(ID,BESTELL_NUMMER)
-                .and().auftrag(ID,BESTELL_NUMMER)
+    public void given_Auftrag_can_be_found_when_calling_findById() {
+        given().auftragRepresentation(ID, BESTELL_NUMMER)
+                .and().auftrag(ID, BESTELL_NUMMER)
                 .and().auftrag_can_be_found();
         when().creating_Controller()
                 .and().calling_findById(ID);
@@ -37,9 +37,9 @@ class AuftragControllerTest extends ScenarioTest<GivenStatement, WhenAction, The
     }
 
     @Test
-    public void given_Auftrag_cannot_be_found_when_calling_findById(){
-        given().auftragRepresentation(ID,BESTELL_NUMMER)
-                .and().auftrag(ID,BESTELL_NUMMER)
+    public void given_Auftrag_cannot_be_found_when_calling_findById() {
+        given().auftragRepresentation(ID, BESTELL_NUMMER)
+                .and().auftrag(ID, BESTELL_NUMMER)
                 .and().auftrag_cannot_be_found();
         when().creating_Controller()
                 .and().calling_findById(ID);

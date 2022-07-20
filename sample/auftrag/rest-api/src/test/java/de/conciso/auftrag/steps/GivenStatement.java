@@ -14,7 +14,7 @@ import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 
-public class GivenStatement extends Stage<GivenStatement>{
+public class GivenStatement extends Stage<GivenStatement> {
 
     @ProvidedScenarioState
     Auftraege auftraege = mock(Auftraege.class);
@@ -32,29 +32,27 @@ public class GivenStatement extends Stage<GivenStatement>{
     AuftragRepresentation expectedAuftragRepresentation;
 
 
-
-
-    public GivenStatement auftrag_can_be_created(){
+    public GivenStatement auftrag_can_be_created() {
         BDDMockito.given(auftraege.create(any(Auftrag.class))).willReturn(testAuftrag);
         return self();
     }
 
-    public GivenStatement auftrag_can_be_found(){
+    public GivenStatement auftrag_can_be_found() {
         BDDMockito.given(auftraege.findById(anyInt())).willReturn(Optional.of(testAuftrag));
         return self();
     }
 
-    public GivenStatement auftrag_cannot_be_found(){
+    public GivenStatement auftrag_cannot_be_found() {
         BDDMockito.given(auftraege.findById(anyInt())).willReturn(Optional.empty());
         return self();
     }
 
-    public GivenStatement auftrag(int id, String bestellnummer){
+    public GivenStatement auftrag(int id, String bestellnummer) {
         testAuftrag = new Auftrag(id, bestellnummer);
         return self();
     }
 
-    public GivenStatement auftragRepresentation(int id, String bestellnummer){
+    public GivenStatement auftragRepresentation(int id, String bestellnummer) {
         testAuftragRepresentation = AuftragRepresentation.builder().id(id).bestellNummer(bestellnummer).build();
         expectedAuftragRepresentation = AuftragRepresentation.builder().id(id).bestellNummer(bestellnummer).artikel(List.of()).build();
         return self();

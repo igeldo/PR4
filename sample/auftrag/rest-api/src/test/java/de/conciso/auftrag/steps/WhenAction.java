@@ -10,7 +10,7 @@ import de.conciso.auftrag.AuftragRepresentation;
 import org.springframework.http.ResponseEntity;
 
 
-public class WhenAction extends Stage<WhenAction>{
+public class WhenAction extends Stage<WhenAction> {
 
     @ExpectedScenarioState
     Auftraege auftraege;
@@ -23,17 +23,17 @@ public class WhenAction extends Stage<WhenAction>{
     @ProvidedScenarioState
     ResponseEntity<AuftragRepresentation> result;
 
-    public WhenAction calling_create(){
+    public WhenAction calling_create() {
         result = cut.create(testAuftragRepresentation);
         return self();
     }
 
-    public WhenAction calling_findById(int id){
+    public WhenAction calling_findById(int id) {
         result = cut.findById(id);
         return self();
     }
 
-    public WhenAction creating_Controller(){
+    public WhenAction creating_Controller() {
         cut = new AuftragController(auftraege);
         return self();
     }
