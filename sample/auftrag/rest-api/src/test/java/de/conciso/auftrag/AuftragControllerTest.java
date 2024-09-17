@@ -1,161 +1,50 @@
 package de.conciso.auftrag;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyInt;
-import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.verify;
-
-import java.util.List;
-import java.util.Optional;
-
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayNameGeneration;
-import org.junit.jupiter.api.DisplayNameGenerator;
-import org.junit.jupiter.api.Nested;
+import com.tngtech.jgiven.annotation.ProvidedScenarioState;
+import com.tngtech.jgiven.junit5.ScenarioTest;
+import de.conciso.auftrag.steps.GivenStatement;
+import de.conciso.auftrag.steps.ThenOutcome;
+import de.conciso.auftrag.steps.WhenAction;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 
-@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
-@ExtendWith(MockitoExtension.class)
-class AuftragControllerTest {
+class AuftragControllerTest extends ScenarioTest<GivenStatement, WhenAction, ThenOutcome> {
 
-  private static final String BESTELL_NUMMER = "someBestellNummer";
-  private static final int ID = 42;
+    static final String BESTELL_NUMMER = "69420";
+    static final int ID = 42;
 
-  @Mock
-  Auftraege auftraege;
-
-  @InjectMocks
-  AuftragController cut;
-
-  @Nested
-  class Given_testAuftrag {
-
-    private AuftragRepresentation testAuftragRepresentation;
-    private Auftrag testAuftrag;
-    private Auftrag testAuftragWithId;
-    private AuftragRepresentation expectedAuftragRepresentation;
-
-    @BeforeEach
-    void arrange() {
-      testAuftragRepresentation = AuftragRepresentation.builder()
-          .bestellNummer(BESTELL_NUMMER)
-          .build();
-      testAuftrag = new Auftrag(BESTELL_NUMMER);
-      testAuftragWithId = new Auftrag(ID, BESTELL_NUMMER);
-      expectedAuftragRepresentation = AuftragRepresentation.builder()
-          .id(ID)
-          .bestellNummer(BESTELL_NUMMER)
-          .artikel(List.of())
-          .build();
+    @Test
+    public void given_Auftrag_can_be_created_when_calling_create() {
+        given().auftragRepresentation(ID, BESTELL_NUMMER)
+                .and().auftrag(ID, BESTELL_NUMMER)
+                .and().auftrag_can_be_created();
+        when().creating_Controller()
+                .and().calling_create();
+        then().auftraegeService_is_called()
+                .and().status_is_OK()
+                .and().body_is_correct();
     }
 
-    @Nested
-    class Given_Auftrag_can_be_created {
-
-      @BeforeEach
-      void arrange() {
-        given(auftraege.create(any(Auftrag.class))).willReturn(testAuftragWithId);
-      }
-
-      @Nested
-      class When_calling_create {
-        ResponseEntity<AuftragRepresentation> result;
-
-        @BeforeEach
-        void act() {
-          result = cut.create(testAuftragRepresentation);
-        }
-
-        @Test
-        void then_AuftraegeService_is_called() {
-          verify(auftraege).create(testAuftrag);
-        }
-
-        @Test
-        void then_status_is_OK() {
-          assertThat(result.getStatusCode()).isEqualTo(HttpStatus.OK);
-        }
-
-        @Test
-        void then_body_is_correct() {
-          assertThat(result.getBody()).isEqualTo(expectedAuftragRepresentation);
-        }
-      }
+    @Test
+    public void given_Auftrag_can_be_found_when_calling_findById() {
+        given().auftragRepresentation(ID, BESTELL_NUMMER)
+                .and().auftrag(ID, BESTELL_NUMMER)
+                .and().auftrag_can_be_found();
+        when().creating_Controller()
+                .and().calling_findById(ID);
+        then().auftraegeService_is_called_findById(ID)
+                .and().status_is_OK()
+                .and().body_is_correct();
     }
 
-    @Nested
-    class Given_Auftrag_can_be_found {
-
-      @BeforeEach
-      void arrange() {
-        given(auftraege.findById(anyInt())).willReturn(Optional.of(testAuftragWithId));
-      }
-
-      @Nested
-      class When_calling_findById {
-        ResponseEntity<AuftragRepresentation> result;
-
-        @BeforeEach
-        void act() {
-          result = cut.findById(ID);
-        }
-
-        @Test
-        void then_AuftraegeService_is_called() {
-          verify(auftraege).findById(ID);
-        }
-
-        @Test
-        void then_status_is_OK() {
-          assertThat(result.getStatusCode()).isEqualTo(HttpStatus.OK);
-        }
-
-        @Test
-        void then_body_is_correct() {
-          assertThat(result.getBody()).isEqualTo(expectedAuftragRepresentation);
-        }
-      }
+    @Test
+    public void given_Auftrag_cannot_be_found_when_calling_findById() {
+        given().auftragRepresentation(ID, BESTELL_NUMMER)
+                .and().auftrag(ID, BESTELL_NUMMER)
+                .and().auftrag_cannot_be_found();
+        when().creating_Controller()
+                .and().calling_findById(ID);
+        then().auftraegeService_is_called_findById(ID)
+                .and().status_is_NOT_FOUND()
+                .and().body_is_empty();
     }
-  }
-
-  @Nested
-  class Given_Auftrag_cannot_be_found {
-
-    @BeforeEach
-    void arrange() {
-      given(auftraege.findById(anyInt())).willReturn(Optional.empty());
-    }
-
-    @Nested
-    class When_calling_findById {
-      ResponseEntity<AuftragRepresentation> result;
-
-      @BeforeEach
-      void act() {
-        result = cut.findById(ID);
-      }
-
-      @Test
-      void then_AuftraegeService_is_called() {
-        verify(auftraege).findById(ID);
-      }
-
-      @Test
-      void then_status_is_NOT_FOUND() {
-        assertThat(result.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
-      }
-
-      @Test
-      void then_body_is_empty() {
-        assertThat(result.hasBody()).isFalse();
-      }
-    }
-  }
 }

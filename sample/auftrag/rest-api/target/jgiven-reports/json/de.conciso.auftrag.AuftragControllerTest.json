@@ -1,0 +1,566 @@
+{
+  "className": "de.conciso.auftrag.AuftragControllerTest",
+  "name": "Auftrag Controller",
+  "scenarios": [
+    {
+      "className": "de.conciso.auftrag.AuftragControllerTest",
+      "testMethodName": "given_Auftrag_cannot_be_found_when_calling_findById",
+      "description": "given Auftrag cannot be found when calling findById",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "auftrag representation",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "auftrag representation"
+                },
+                {
+                  "value": "42",
+                  "argumentInfo": {
+                    "argumentName": "id",
+                    "formattedValue": "42"
+                  }
+                },
+                {
+                  "value": "69420",
+                  "argumentInfo": {
+                    "argumentName": "bestellnummer",
+                    "formattedValue": "69420"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 17227223,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "auftrag",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "auftrag"
+                },
+                {
+                  "value": "42",
+                  "argumentInfo": {
+                    "argumentName": "id",
+                    "formattedValue": "42"
+                  }
+                },
+                {
+                  "value": "69420",
+                  "argumentInfo": {
+                    "argumentName": "bestellnummer",
+                    "formattedValue": "69420"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 731051,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "auftrag cannot be found",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "auftrag cannot be found"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 13597984,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 488964,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling findById",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling findById"
+                },
+                {
+                  "value": "42",
+                  "argumentInfo": {
+                    "argumentName": "id",
+                    "formattedValue": "42"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 14960618,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "auftraegeService is called findById",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "auftraegeService is called findById"
+                },
+                {
+                  "value": "42",
+                  "argumentInfo": {
+                    "argumentName": "id",
+                    "formattedValue": "42"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 6280432,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is NOT FOUND",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is NOT FOUND"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 51356766,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is empty",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is empty"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 889821,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 130865030
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 130865030
+    },
+    {
+      "className": "de.conciso.auftrag.AuftragControllerTest",
+      "testMethodName": "given_Auftrag_can_be_found_when_calling_findById",
+      "description": "given Auftrag can be found when calling findById",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "auftrag representation",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "auftrag representation"
+                },
+                {
+                  "value": "42",
+                  "argumentInfo": {
+                    "argumentName": "id",
+                    "formattedValue": "42"
+                  }
+                },
+                {
+                  "value": "69420",
+                  "argumentInfo": {
+                    "argumentName": "bestellnummer",
+                    "formattedValue": "69420"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 800381,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "auftrag",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "auftrag"
+                },
+                {
+                  "value": "42",
+                  "argumentInfo": {
+                    "argumentName": "id",
+                    "formattedValue": "42"
+                  }
+                },
+                {
+                  "value": "69420",
+                  "argumentInfo": {
+                    "argumentName": "bestellnummer",
+                    "formattedValue": "69420"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 480267,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "auftrag can be found",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "auftrag can be found"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 1009386,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 238250,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling findById",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling findById"
+                },
+                {
+                  "value": "42",
+                  "argumentInfo": {
+                    "argumentName": "id",
+                    "formattedValue": "42"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 1724447,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "auftraegeService is called findById",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "auftraegeService is called findById"
+                },
+                {
+                  "value": "42",
+                  "argumentInfo": {
+                    "argumentName": "id",
+                    "formattedValue": "42"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 900100,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is OK",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is OK"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 156456,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is correct",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is correct"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 318842,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 6730292
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 6730292
+    },
+    {
+      "className": "de.conciso.auftrag.AuftragControllerTest",
+      "testMethodName": "given_Auftrag_can_be_created_when_calling_create",
+      "description": "given Auftrag can be created when calling create",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "auftrag representation",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "auftrag representation"
+                },
+                {
+                  "value": "42",
+                  "argumentInfo": {
+                    "argumentName": "id",
+                    "formattedValue": "42"
+                  }
+                },
+                {
+                  "value": "69420",
+                  "argumentInfo": {
+                    "argumentName": "bestellnummer",
+                    "formattedValue": "69420"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 613109,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "auftrag",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "auftrag"
+                },
+                {
+                  "value": "42",
+                  "argumentInfo": {
+                    "argumentName": "id",
+                    "formattedValue": "42"
+                  }
+                },
+                {
+                  "value": "69420",
+                  "argumentInfo": {
+                    "argumentName": "bestellnummer",
+                    "formattedValue": "69420"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 431725,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "auftrag can be created",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "auftrag can be created"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 1244909,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "creating Controller",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "creating Controller"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 283296,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "calling create",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "calling create"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 390878,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "auftraegeService is called",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "auftraegeService is called"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 622866,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "status is OK",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "status is OK"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 130115,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "body is correct",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "body is correct"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 137670,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 4900686
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 4900686
+    }
+  ],
+  "tagMap": {}
+}

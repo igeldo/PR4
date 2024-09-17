@@ -1,0 +1,11 @@
+de/conciso/shop/PersonRepresentation$PersonRepresentationBuilder.class
+de/conciso/shop/LieferadresseRepresentation$LieferadresseRepresentationBuilder.class
+de/conciso/shop/AuftragRequestRepresentation.class
+de/conciso/shop/AuftragRequestRepresentation$AuftragRequestRepresentationBuilder.class
+de/conciso/shop/PersonRepresentation.class
+de/conciso/shop/ShopController.class
+de/conciso/shop/AddressRepresentation.class
+de/conciso/shop/AddressRepresentation$AddressRepresentationBuilder.class
+de/conciso/shop/AuftragRepresentation.class
+de/conciso/shop/AuftragRepresentation$AuftragRepresentationBuilder.class
+de/conciso/shop/LieferadresseRepresentation.class

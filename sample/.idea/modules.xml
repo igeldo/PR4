@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/shop/app/app.iml" filepath="$PROJECT_DIR$/shop/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auftrag/app/app (1) (de.conciso.auftrag).iml" filepath="$PROJECT_DIR$/auftrag/app/app (1) (de.conciso.auftrag).iml" />
+      <module fileurl="file://$PROJECT_DIR$/person/app/app (1) (de.conciso.person).iml" filepath="$PROJECT_DIR$/person/app/app (1) (de.conciso.person).iml" />
+      <module fileurl="file://$PROJECT_DIR$/auftrag/auftrag.iml" filepath="$PROJECT_DIR$/auftrag/auftrag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/docker/docker.iml" filepath="$PROJECT_DIR$/shop/docker/docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auftrag/docker/docker (1) (de.conciso.auftrag).iml" filepath="$PROJECT_DIR$/auftrag/docker/docker (1) (de.conciso.auftrag).iml" />
+      <module fileurl="file://$PROJECT_DIR$/person/docker/docker (1) (de.conciso.person).iml" filepath="$PROJECT_DIR$/person/docker/docker (1) (de.conciso.person).iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/domain-api/domain-api.iml" filepath="$PROJECT_DIR$/shop/domain-api/domain-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auftrag/domain-api/domain-api (1) (de.conciso.auftrag).iml" filepath="$PROJECT_DIR$/auftrag/domain-api/domain-api (1) (de.conciso.auftrag).iml" />
+      <module fileurl="file://$PROJECT_DIR$/person/domain-api/domain-api (1) (de.conciso.person).iml" filepath="$PROJECT_DIR$/person/domain-api/domain-api (1) (de.conciso.person).iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/domain-core/domain-core.iml" filepath="$PROJECT_DIR$/shop/domain-core/domain-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auftrag/domain-core/domain-core (1) (de.conciso.auftrag).iml" filepath="$PROJECT_DIR$/auftrag/domain-core/domain-core (1) (de.conciso.auftrag).iml" />
+      <module fileurl="file://$PROJECT_DIR$/person/domain-core/domain-core (1) (de.conciso.person).iml" filepath="$PROJECT_DIR$/person/domain-core/domain-core (1) (de.conciso.person).iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/infrastructure/infrastructure.iml" filepath="$PROJECT_DIR$/shop/infrastructure/infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auftrag/infrastructure/infrastructure (1) (de.conciso.auftrag).iml" filepath="$PROJECT_DIR$/auftrag/infrastructure/infrastructure (1) (de.conciso.auftrag).iml" />
+      <module fileurl="file://$PROJECT_DIR$/person/infrastructure/infrastructure (1) (de.conciso.person).iml" filepath="$PROJECT_DIR$/person/infrastructure/infrastructure (1) (de.conciso.person).iml" />
+      <module fileurl="file://$PROJECT_DIR$/person/person.iml" filepath="$PROJECT_DIR$/person/person.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/rest-api/rest-api.iml" filepath="$PROJECT_DIR$/shop/rest-api/rest-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auftrag/rest-api/rest-api (1) (de.conciso.auftrag).iml" filepath="$PROJECT_DIR$/auftrag/rest-api/rest-api (1) (de.conciso.auftrag).iml" />
+      <module fileurl="file://$PROJECT_DIR$/person/rest-api/rest-api (1) (de.conciso.person).iml" filepath="$PROJECT_DIR$/person/rest-api/rest-api (1) (de.conciso.person).iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sample.iml" filepath="$PROJECT_DIR$/.idea/sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop/starter.iml" filepath="$PROJECT_DIR$/shop/starter.iml" />
+    </modules>
+  </component>
+</project>

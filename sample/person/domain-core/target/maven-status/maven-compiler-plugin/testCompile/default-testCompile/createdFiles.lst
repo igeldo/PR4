@@ -1,0 +1,10 @@
+de/conciso/person/PersonenServiceTest$Given_person_cannot_be_found$When_calling_findById.class
+de/conciso/person/PersonenServiceTest$Given_testPerson$Given_person_can_be_found.class
+de/conciso/person/PersonenServiceTest$Given_testPerson$Given_person_can_be_found$When_calling_findById.class
+de/conciso/person/PersonenServiceTest.class
+de/conciso/person/PersonenServiceTest$Given_testPerson.class
+de/conciso/person/PersonenServiceTest$Given_testPerson$Given_person_can_be_found$When_calling_addAddress.class
+de/conciso/person/PersonenServiceTest$Given_testPerson$Given_person_can_be_saved.class
+de/conciso/person/PersonenServiceTest$Given_person_cannot_be_found$When_calling_addAddress.class
+de/conciso/person/PersonenServiceTest$Given_testPerson$Given_person_can_be_saved$When_calling_create.class
+de/conciso/person/PersonenServiceTest$Given_person_cannot_be_found.class
